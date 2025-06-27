@@ -124,6 +124,7 @@
 
 ### Added
 - ✅ Created a `.gitignore` file to exclude unnecessary files from version control.
+- ✅ Created `README.md` file with project description, installation, usage, and structure.
 
 ### 🔥 **CURRENT PRIORITIES**
 
