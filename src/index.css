@@ -1,0 +1,338 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom animations for emotion feedback */
+@keyframes pulse-success {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+@keyframes shake-error {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes glow-hint {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.6);
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.3) rotate(-10deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05) rotate(5deg);
+  }
+  70% {
+    transform: scale(0.9) rotate(-2deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes progress-fill {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--progress-width);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1) rotate(180deg);
+    opacity: 1;
+  }
+}
+
+.pulse-success {
+  animation: pulse-success 0.6s ease-in-out;
+}
+
+.shake-error {
+  animation: shake-error 0.5s ease-in-out;
+}
+
+.glow-hint {
+  animation: glow-hint 2s ease-in-out infinite;
+}
+
+.bounce-in {
+  animation: bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.slide-up {
+  animation: slide-up 0.4s ease-out;
+}
+
+.progress-fill {
+  animation: progress-fill 1s ease-out;
+}
+
+.sparkle {
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+/* Facial cue highlighting */
+.facial-cue-highlight {
+  position: relative;
+  overflow: visible;
+}
+
+.facial-cue-highlight::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6, #06b6d4, #10b981);
+  border-radius: inherit;
+  z-index: -1;
+  animation: glow-hint 2s ease-in-out infinite;
+}
+
+/* Progress indicators */
+.progress-bar {
+  background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 50%, #06b6d4 100%);
+  background-size: 200% 100%;
+  animation: progress-fill 1s ease-out;
+}
+
+.progress-bar.animated {
+  background-position: 100% 0;
+  transition: background-position 2s ease-in-out;
+}
+
+/* Badge animations */
+.badge-new {
+  position: relative;
+}
+
+.badge-new::after {
+  content: '✨';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-size: 12px;
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+/* Accessibility improvements */
+.focus-visible {
+  @apply outline-2 outline-offset-2 outline-primary;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --border: 0 0% 0%;
+    --primary: 220 100% 40%;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Responsive Design Improvements */
+@media (max-width: 640px) {
+  /* Mobile optimizations */
+  .emotion-card {
+    @apply text-sm;
+  }
+  
+  .progress-indicator {
+    @apply text-xs;
+  }
+  
+  .facial-cue-highlight {
+    border-width: 1px;
+  }
+  
+  .hint-tooltip {
+    @apply text-xs p-2;
+  }
+  
+  .achievement-badge {
+    @apply text-xs px-2 py-1;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablet optimizations */
+  .grid-cols-auto {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .emotion-highlight-controls {
+    @apply flex-col gap-2;
+  }
+  
+  .navigation-buttons {
+    @apply flex-col gap-2;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktop enhancements */
+  .emotion-card:hover {
+    transform: scale(1.02) rotate(0.5deg);
+  }
+  
+  .progress-indicator {
+    @apply text-base;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small mobile optimizations */
+  .emotion-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .highlight-mode-selector {
+    @apply flex-wrap;
+  }
+  
+  .progress-bars {
+    @apply space-y-2;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .emotion-card {
+    @apply active:scale-95;
+  }
+  
+  .button-interactive {
+    @apply min-h-[44px] min-w-[44px];
+  }
+  
+  .facial-area-badge {
+    @apply min-h-[32px] px-3;
+  }
+}
+
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .emotion-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Landscape mobile optimizations */
+@media (max-height: 500px) and (orientation: landscape) {
+  .learning-layout {
+    @apply grid-cols-2 gap-4;
+  }
+  
+  .progress-section {
+    @apply hidden;
+  }
+  
+  .emotion-details {
+    @apply max-h-[300px] overflow-y-auto;
+  }
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Face outline (slightly tilted) -->
+  <ellipse cx="105" cy="110" rx="70" ry="80" fill="#fdbcb4" stroke="#333" stroke-width="2" transform="rotate(5 105 110)"/>
+  
+  <!-- Hair -->
+  <path d="M35 60 Q55 20 105 25 Q155 20 175 60 Q165 40 105 35 Q45 40 35 60" fill="#8b4513" transform="rotate(5 105 110)"/>
+  
+  <!-- Eyebrows (asymmetric - one raised, one furrowed) -->
+  <path d="M60 75 Q70 70 80 75" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round" transform="rotate(5 105 110)"/>
+  <path d="M125 70 Q135 68 145 72" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round" transform="rotate(5 105 110)"/>
+  
+  <!-- Eyes (questioning, slightly different sizes) -->
+  <ellipse cx="70" cy="85" rx="12" ry="8" fill="white" transform="rotate(5 105 110)"/>
+  <ellipse cx="135" cy="83" rx="13" ry="9" fill="white" transform="rotate(5 105 110)"/>
+  <!-- Pupils looking in slightly different directions -->
+  <circle cx="70" cy="85" r="4" fill="#333" transform="rotate(5 105 110)"/>
+  <circle cx="137" cy="83" r="4" fill="#333" transform="rotate(5 105 110)"/>
+  
+  <!-- Nose -->
+  <path d="M100 95 L105 105 L110 95" stroke="#333" stroke-width="1.5" fill="none" transform="rotate(5 105 110)"/>
+  
+  <!-- Mouth (slightly open, uncertain) -->
+  <ellipse cx="105" cy="130" rx="8" ry="5" fill="#333" opacity="0.3" transform="rotate(5 105 110)"/>
+  <path d="M97 128 Q105 132 113 128" stroke="#333" stroke-width="1.5" fill="none" stroke-linecap="round" transform="rotate(5 105 110)"/>
+  
+  <!-- Question mark thought bubble -->
+  <circle cx="150" cy="50" r="12" fill="white" stroke="#333" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="145" cy="60" r="4" fill="white" stroke="#333" stroke-width="1" opacity="0.8"/>
+  <circle cx="142" cy="67" r="2" fill="white" stroke="#333" stroke-width="0.5" opacity="0.8"/>
+  
+  <!-- Question mark inside bubble -->
+  <path d="M145 45 Q150 40 155 45 Q155 50 150 52 L150 55" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="150" cy="58" r="1" fill="#333"/>
+  
+  <!-- Confusion lines on forehead -->
+  <path d="M75 65 Q85 62 95 65" stroke="#333" stroke-width="1" fill="none" opacity="0.5" transform="rotate(5 105 110)"/>
+  <path d="M110 62 Q120 60 130 63" stroke="#333" stroke-width="1" fill="none" opacity="0.5" transform="rotate(5 105 110)"/>
+</svg>

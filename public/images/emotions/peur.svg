@@ -1,0 +1,24 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Face circle -->
+  <circle cx="100" cy="100" r="80" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  
+  <!-- Eyebrows (raised in fear) -->
+  <path d="M 65 65 Q 75 60 85 65" stroke="#374151" stroke-width="3" fill="none"/>
+  <path d="M 115 65 Q 125 60 135 65" stroke="#374151" stroke-width="3" fill="none"/>
+  
+  <!-- Eyes (wide with fear) -->
+  <circle cx="75" cy="80" r="10" fill="white" stroke="#374151" stroke-width="2"/>
+  <circle cx="125" cy="80" r="10" fill="white" stroke="#374151" stroke-width="2"/>
+  <circle cx="75" cy="80" r="6" fill="#374151"/>
+  <circle cx="125" cy="80" r="6" fill="#374151"/>
+  
+  <!-- Nose -->
+  <ellipse cx="100" cy="100" rx="3" ry="6" fill="#6B7280"/>
+  
+  <!-- Mouth (open in fear) -->
+  <ellipse cx="100" cy="125" rx="8" ry="12" fill="#374151"/>
+  
+  <!-- Sweat drops -->
+  <ellipse cx="55" cy="75" rx="2" ry="6" fill="#60A5FA"/>
+  <ellipse cx="145" cy="75" rx="2" ry="6" fill="#60A5FA"/>
+</svg>

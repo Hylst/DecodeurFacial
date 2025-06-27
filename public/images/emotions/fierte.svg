@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Face outline (chin slightly raised) -->
+  <ellipse cx="100" cy="105" rx="70" ry="80" fill="#fdbcb4" stroke="#333" stroke-width="2"/>
+  
+  <!-- Hair -->
+  <path d="M30 55 Q50 15 100 20 Q150 15 170 55 Q160 35 100 30 Q40 35 30 55" fill="#8b4513"/>
+  
+  <!-- Eyebrows (confident, slightly raised) -->
+  <path d="M60 70 Q70 65 80 68" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M120 68 Q130 65 140 70" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Eyes (confident, direct gaze) -->
+  <ellipse cx="70" cy="80" rx="12" ry="8" fill="white"/>
+  <ellipse cx="130" cy="80" rx="12" ry="8" fill="white"/>
+  <!-- Pupils looking straight ahead confidently -->
+  <circle cx="70" cy="80" r="4" fill="#333"/>
+  <circle cx="130" cy="80" r="4" fill="#333"/>
+  
+  <!-- Nose -->
+  <path d="M95 90 L100 100 L105 90" stroke="#333" stroke-width="1.5" fill="none"/>
+  
+  <!-- Mouth (subtle, satisfied smile - slightly asymmetric) -->
+  <path d="M85 125 Q100 130 115 127" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Slight dimple on one side -->
+  <circle cx="118" cy="120" r="1" fill="#333" opacity="0.3"/>
+  
+  <!-- Confident posture lines -->
+  <path d="M90 75 Q95 73 100 75" stroke="#333" stroke-width="0.5" fill="none" opacity="0.4"/>
+  
+  <!-- Slight shadow under chin showing raised position -->
+  <ellipse cx="100" cy="175" rx="50" ry="8" fill="#333" opacity="0.1"/>
+</svg>

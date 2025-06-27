@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Face outline -->
+  <ellipse cx="100" cy="110" rx="70" ry="80" fill="#fdbcb4" stroke="#333" stroke-width="2"/>
+  
+  <!-- Hair -->
+  <path d="M30 60 Q50 20 100 25 Q150 20 170 60 Q160 40 100 35 Q40 40 30 60" fill="#8b4513"/>
+  
+  <!-- Eyebrows (slightly furrowed, suspicious) -->
+  <path d="M60 75 Q70 72 80 76" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M120 76 Q130 72 140 75" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Eyes (narrowed, looking sideways) -->
+  <ellipse cx="70" cy="85" rx="12" ry="6" fill="white"/>
+  <ellipse cx="130" cy="85" rx="12" ry="6" fill="white"/>
+  <!-- Pupils looking to the side suspiciously -->
+  <circle cx="75" cy="85" r="4" fill="#333"/>
+  <circle cx="135" cy="85" r="4" fill="#333"/>
+  
+  <!-- Nose -->
+  <path d="M95 95 L100 105 L105 95" stroke="#333" stroke-width="1.5" fill="none"/>
+  
+  <!-- Mouth (pinched, tense) -->
+  <path d="M88 130 Q100 128 112 130" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Tension lines between eyebrows -->
+  <path d="M85 78 Q90 76 95 78" stroke="#333" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M105 78 Q110 76 115 78" stroke="#333" stroke-width="1" fill="none" opacity="0.6"/>
+  
+  <!-- Crow's feet from squinting -->
+  <path d="M82 82 L87 80" stroke="#333" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <path d="M82 85 L87 85" stroke="#333" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <path d="M82 88 L87 90" stroke="#333" stroke-width="0.5" fill="none" opacity="0.5"/>
+  
+  <path d="M118 82 L113 80" stroke="#333" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <path d="M118 85 L113 85" stroke="#333" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <path d="M118 88 L113 90" stroke="#333" stroke-width="0.5" fill="none" opacity="0.5"/>
+  
+  <!-- Slight shadow around eyes showing surveillance -->
+  <ellipse cx="70" cy="85" rx="15" ry="10" fill="#333" opacity="0.1"/>
+  <ellipse cx="130" cy="85" rx="15" ry="10" fill="#333" opacity="0.1"/>
+</svg>
