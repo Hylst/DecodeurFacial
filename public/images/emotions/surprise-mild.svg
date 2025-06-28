@@ -1,0 +1,111 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Face gradient with mild surprise -->
+    <radialGradient id="faceGradientMildSurprise" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#f8f5f0"/>
+      <stop offset="70%" stop-color="#f0e8e0"/>
+      <stop offset="100%" stop-color="#e8e0d8"/>
+    </radialGradient>
+    
+    <!-- Mild surprise aura -->
+    <radialGradient id="mildSurpriseAura" cx="0.5" cy="0.3" r="0.9">
+      <stop offset="0%" stop-color="rgba(240,230,210,0.2)"/>
+      <stop offset="100%" stop-color="rgba(220,210,190,0.3)"/>
+    </radialGradient>
+    
+    <!-- Eye gradient (slightly widened) -->
+    <radialGradient id="eyeGradientSurprised" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#fafafa"/>
+      <stop offset="100%" stop-color="#f5f5f5"/>
+    </radialGradient>
+    
+    <!-- Wonder energy -->
+    <radialGradient id="wonderEnergy" cx="0.5" cy="0.4" r="0.8">
+      <stop offset="0%" stop-color="rgba(230,220,200,0.1)"/>
+      <stop offset="100%" stop-color="rgba(210,200,180,0.2)"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Mild surprise aura -->
+  <ellipse cx="100" cy="105" rx="85" ry="95" fill="url(#mildSurpriseAura)"/>
+  
+  <!-- Wonder energy -->
+  <ellipse cx="100" cy="105" rx="70" ry="80" fill="url(#wonderEnergy)"/>
+  
+  <!-- Face outline (alert) -->
+  <ellipse cx="100" cy="105" rx="65" ry="75" fill="url(#faceGradientMildSurprise)" stroke="#e0d0c0" stroke-width="1.5"/>
+  
+  <!-- Hair (slightly lifted) -->
+  <path d="M30 55 Q50 15 100 20 Q150 15 170 55 Q160 35 100 30 Q40 35 30 55" fill="#8b5a3c" stroke="#6d4428" stroke-width="0.5"/>
+  <path d="M50 40 Q65 30 80 35" stroke="#9d6b4a" stroke-width="0.8" fill="none" opacity="0.6"/>
+  <path d="M120 35 Q135 30 150 40" stroke="#9d6b4a" stroke-width="0.8" fill="none" opacity="0.6"/>
+  <!-- Slightly lifted strands -->
+  <path d="M45 35 Q50 25 55 35" stroke="#9d6b4a" stroke-width="0.6" fill="none" opacity="0.5"/>
+  <path d="M145 35 Q150 25 155 35" stroke="#9d6b4a" stroke-width="0.6" fill="none" opacity="0.5"/>
+  
+  <!-- Eyebrows (raised in surprise) -->
+  <path d="M60 68 Q70 62 80 66" stroke="#5d3428" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M120 66 Q130 62 140 68" stroke="#5d3428" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Forehead lines from raised eyebrows -->
+  <path d="M95 55 Q100 52 105 55" stroke="#e0d0c0" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M97 58 Q100 55 103 58" stroke="#e0d0c0" stroke-width="0.8" fill="none" opacity="0.5"/>
+  
+  <!-- Eyes (widened with interest) -->
+  <ellipse cx="75" cy="85" rx="13" ry="11" fill="url(#eyeGradientSurprised)" stroke="#e0d0c0" stroke-width="1"/>
+  <ellipse cx="125" cy="85" rx="13" ry="11" fill="url(#eyeGradientSurprised)" stroke="#e0d0c0" stroke-width="1"/>
+  
+  <!-- Upper eyelids (raised) -->
+  <path d="M62 79 Q75 75 88 79" stroke="#e0d0c0" stroke-width="1.5" fill="none"/>
+  <path d="M112 79 Q125 75 138 79" stroke="#e0d0c0" stroke-width="1.5" fill="none"/>
+  
+  <!-- Lower eyelids (relaxed) -->
+  <path d="M62 91 Q75 95 88 91" stroke="#f0e0d0" stroke-width="1" fill="none" opacity="0.7"/>
+  <path d="M112 91 Q125 95 138 91" stroke="#f0e0d0" stroke-width="1" fill="none" opacity="0.7"/>
+  
+  <!-- Pupils (alert and focused) -->
+  <circle cx="75" cy="85" r="3.5" fill="#2c1810"/>
+  <circle cx="125" cy="85" r="3.5" fill="#2c1810"/>
+  
+  <!-- Eye highlights (bright and alert) -->
+  <circle cx="76" cy="84" r="1" fill="#ffffff" opacity="0.9"/>
+  <circle cx="126" cy="84" r="1" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Nose (normal) -->
+  <path d="M95 95 L100 105 L105 95" stroke="#e0d0c0" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <ellipse cx="98" cy="102" rx="1.5" ry="2" fill="#e0d0c0" opacity="0.5"/>
+  <ellipse cx="102" cy="102" rx="1.5" ry="2" fill="#e0d0c0" opacity="0.5"/>
+  
+  <!-- Mouth (slightly open in surprise) -->
+  <ellipse cx="100" cy="125" rx="6" ry="5" fill="#f0e8e0" stroke="#e0d0c0" stroke-width="1.2"/>
+  
+  <!-- Lip definition -->
+  <path d="M94 123 Q100 121 106 123" stroke="#f0e0d0" stroke-width="1" fill="none" opacity="0.7"/>
+  
+  <!-- Subtle nasolabial folds -->
+  <path d="M105 105 Q108 115 106 120" stroke="#f0e0d0" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M95 105 Q92 115 94 120" stroke="#f0e0d0" stroke-width="1" fill="none" opacity="0.6"/>
+  
+  <!-- Cheek definition (slightly lifted) -->
+  <path d="M115 110 Q118 115 116 120" stroke="#f8f0e8" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M85 110 Q82 115 84 120" stroke="#f8f0e8" stroke-width="1" fill="none" opacity="0.5"/>
+  
+  <!-- Chin and jawline (relaxed) -->
+  <path d="M85 145 Q100 148 115 145" stroke="#f0e0d0" stroke-width="1.2" fill="none" opacity="0.6"/>
+  
+  <!-- Neck (alert posture) -->
+  <path d="M90 170 Q100 173 110 170" stroke="#f8f0e8" stroke-width="1" fill="none" opacity="0.5"/>
+  
+  <!-- Subtle surprise sparkles -->
+  <circle cx="45" cy="75" r="1" fill="rgba(240,230,210,0.6)" opacity="0.7"/>
+  <circle cx="155" cy="80" r="0.8" fill="rgba(240,230,210,0.5)" opacity="0.6"/>
+  <circle cx="40" cy="110" r="0.6" fill="rgba(240,230,210,0.4)" opacity="0.5"/>
+  
+  <!-- Wonder lines -->
+  <path d="M40 95 Q50 90 60 95" stroke="rgba(220,210,190,0.3)" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M140 95 Q150 90 160 95" stroke="rgba(220,210,190,0.3)" stroke-width="1" fill="none" opacity="0.4"/>
+  
+  <!-- Gentle shadow -->
+  <ellipse cx="100" cy="175" rx="50" ry="8" fill="rgba(210,200,180,0.2)"/>
+</svg>

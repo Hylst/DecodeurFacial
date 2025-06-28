@@ -1,0 +1,101 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Face gradient with gentle warmth -->
+    <radialGradient id="faceGradientMildJoy" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#f8e8d8"/>
+      <stop offset="70%" stop-color="#f0d8c8"/>
+      <stop offset="100%" stop-color="#e8c8b8"/>
+    </radialGradient>
+    
+    <!-- Gentle happiness aura -->
+    <radialGradient id="gentleHappinessAura" cx="0.5" cy="0.3" r="0.9">
+      <stop offset="0%" stop-color="rgba(255,240,200,0.1)"/>
+      <stop offset="100%" stop-color="rgba(255,220,150,0.15)"/>
+    </radialGradient>
+    
+    <!-- Eye gradient -->
+    <radialGradient id="eyeGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="80%" stop-color="#f8f8f8"/>
+      <stop offset="100%" stop-color="#f0f0f0"/>
+    </radialGradient>
+    
+    <!-- Subtle smile highlight -->
+    <radialGradient id="subtleSmileHighlight" cx="0.5" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="rgba(255,245,235,0.3)"/>
+      <stop offset="100%" stop-color="rgba(255,245,235,0)"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Gentle happiness aura -->
+  <ellipse cx="100" cy="105" rx="80" ry="90" fill="url(#gentleHappinessAura)"/>
+  
+  <!-- Face outline -->
+  <ellipse cx="100" cy="105" rx="70" ry="80" fill="url(#faceGradientMildJoy)" stroke="#d4a894" stroke-width="1.2"/>
+  
+  <!-- Hair -->
+  <path d="M30 55 Q50 15 100 20 Q150 15 170 55 Q160 35 100 30 Q40 35 30 55" fill="#8b5a3c" stroke="#6d4428" stroke-width="0.5"/>
+  <path d="M50 45 Q65 35 80 40" stroke="#9d6b4a" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M120 40 Q135 35 150 45" stroke="#9d6b4a" stroke-width="0.8" fill="none" opacity="0.5"/>
+  
+  <!-- Eyebrows (gently raised) -->
+  <path d="M60 70 Q70 68 80 70" stroke="#5d4037" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <path d="M120 70 Q130 68 140 70" stroke="#5d4037" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  
+  <!-- Eyes (content and warm) -->
+  <ellipse cx="70" cy="80" rx="11" ry="7" fill="url(#eyeGradient)" stroke="#d4a894" stroke-width="0.8"/>
+  <ellipse cx="130" cy="80" rx="11" ry="7" fill="url(#eyeGradient)" stroke="#d4a894" stroke-width="0.8"/>
+  
+  <!-- Upper eyelids (relaxed) -->
+  <path d="M59 77 Q70 75 81 77" stroke="#d4a894" stroke-width="1" fill="none"/>
+  <path d="M119 77 Q130 75 141 77" stroke="#d4a894" stroke-width="1" fill="none"/>
+  
+  <!-- Pupils (centered, content) -->
+  <circle cx="70" cy="80" r="3.5" fill="#2c1810"/>
+  <circle cx="130" cy="80" r="3.5" fill="#2c1810"/>
+  
+  <!-- Eye highlights (gentle sparkle) -->
+  <circle cx="71" cy="78" r="1.2" fill="#ffffff" opacity="0.9"/>
+  <circle cx="131" cy="78" r="1.2" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Subtle smile lines -->
+  <path d="M81 85 Q85 88 88 85" stroke="#e0c0a8" stroke-width="0.6" fill="none" opacity="0.4"/>
+  <path d="M112 85 Q115 88 118 85" stroke="#e0c0a8" stroke-width="0.6" fill="none" opacity="0.4"/>
+  
+  <!-- Nose -->
+  <path d="M95 90 L100 100 L105 90" stroke="#d4a894" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <ellipse cx="98" cy="97" rx="1.5" ry="2" fill="#d4a894" opacity="0.3"/>
+  <ellipse cx="102" cy="97" rx="1.5" ry="2" fill="#d4a894" opacity="0.3"/>
+  
+  <!-- Mouth (gentle, content smile) -->
+  <path d="M85 125 Q100 130 115 125" stroke="#d4a894" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Smile highlight -->
+  <ellipse cx="100" cy="127" rx="12" ry="4" fill="url(#subtleSmileHighlight)"/>
+  
+  <!-- Lip definition -->
+  <path d="M87 123 Q100 127 113 123" stroke="#e0c0a8" stroke-width="0.8" fill="none" opacity="0.6"/>
+  
+  <!-- Gentle dimples -->
+  <circle cx="83" cy="122" r="1.2" fill="#e0c0a8" opacity="0.4"/>
+  <circle cx="117" cy="122" r="1.2" fill="#e0c0a8" opacity="0.4"/>
+  
+  <!-- Subtle nasolabial folds -->
+  <path d="M105 100 Q110 110 113 120" stroke="#e8d0b8" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M95 100 Q90 110 87 120" stroke="#e8d0b8" stroke-width="0.8" fill="none" opacity="0.3"/>
+  
+  <!-- Cheek definition -->
+  <path d="M115 108 Q120 113 118 118" stroke="#f0d8c8" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M85 108 Q80 113 82 118" stroke="#f0d8c8" stroke-width="0.8" fill="none" opacity="0.4"/>
+  
+  <!-- Chin and jawline -->
+  <path d="M85 150 Q100 152 115 150" stroke="#e0c0a8" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M75 135 Q90 140 100 138" stroke="#e8d0b8" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M100 138 Q110 140 125 135" stroke="#e8d0b8" stroke-width="0.8" fill="none" opacity="0.3"/>
+  
+  <!-- Neck -->
+  <path d="M90 175 Q100 178 110 175" stroke="#e8d0b8" stroke-width="0.8" fill="none" opacity="0.3"/>
+  
+  <!-- Gentle shadow -->
+  <ellipse cx="100" cy="175" rx="45" ry="6" fill="rgba(200,180,160,0.15)"/>
+</svg>

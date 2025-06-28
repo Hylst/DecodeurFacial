@@ -1,0 +1,145 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mild Embarrassment: Light shyness, subtle avoidant gaze, discrete blushing -->
+  
+  <!-- Definitions for gradients and effects -->
+  <defs>
+    <!-- Face gradient with subtle blush -->
+    <radialGradient id="faceGradientMild" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#ffeaa7" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#fdcb6e" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#e17055" stop-opacity="0.7"/>
+    </radialGradient>
+    
+    <!-- Eye gradient with shy, avoidant look -->
+    <radialGradient id="eyeGradientMild" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#74b9ff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#0984e3" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#2d3436" stop-opacity="0.8"/>
+    </radialGradient>
+    
+    <!-- Subtle embarrassment aura -->
+    <radialGradient id="embarrassmentAura" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#fab1a0" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#e17055" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#d63031" stop-opacity="0.02"/>
+    </radialGradient>
+    
+    <!-- Blush gradient -->
+    <radialGradient id="blushGradient" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#fab1a0" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#e17055" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#d63031" stop-opacity="0.1"/>
+    </radialGradient>
+    
+    <!-- Shy glow filter -->
+    <filter id="shyGlow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background aura of mild embarrassment -->
+  <circle cx="100" cy="100" r="90" fill="url(#embarrassmentAura)" opacity="0.5"/>
+  
+  <!-- Face shape with slightly lowered position -->
+  <ellipse cx="100" cy="98" rx="44" ry="48" fill="url(#faceGradientMild)" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Hair with slightly disheveled, shy appearance -->
+  <path d="M 56 68 Q 72 48 100 52 Q 128 48 144 68 Q 140 58 118 62 Q 100 58 82 62 Q 60 58 56 68" 
+        fill="#6c5ce7" stroke="#a29bfe" stroke-width="1"/>
+  
+  <!-- Additional hair strands showing nervousness -->
+  <path d="M 65 60 Q 75 55 85 60" stroke="#a29bfe" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M 115 60 Q 125 55 135 60" stroke="#a29bfe" stroke-width="1.5" fill="none" opacity="0.6"/>
+  
+  <!-- Eyebrows with subtle worry (slightly raised and tense) -->
+  <path d="M 76 78 Q 85 75 94 78" stroke="#2d3436" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 106 78 Q 115 75 124 78" stroke="#2d3436" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Subtle worry lines -->
+  <path d="M 88 76 Q 90 74 92 76" stroke="#b2bec3" stroke-width="0.6" fill="none" opacity="0.4"/>
+  <path d="M 108 76 Q 110 74 112 76" stroke="#b2bec3" stroke-width="0.6" fill="none" opacity="0.4"/>
+  
+  <!-- Eyes with avoidant, shy gaze (looking down and away) -->
+  <ellipse cx="84" cy="88" rx="7" ry="5" fill="url(#eyeGradientMild)"/>
+  <ellipse cx="116" cy="88" rx="7" ry="5" fill="url(#eyeGradientMild)"/>
+  
+  <!-- Upper eyelids showing shyness -->
+  <path d="M 77 86 Q 84 84 91 86" stroke="#2d3436" stroke-width="1" fill="none" opacity="0.7"/>
+  <path d="M 109 86 Q 116 84 123 86" stroke="#2d3436" stroke-width="1" fill="none" opacity="0.7"/>
+  
+  <!-- Pupils looking down and slightly away -->
+  <circle cx="83" cy="90" r="2.5" fill="#2d3436"/>
+  <circle cx="117" cy="90" r="2.5" fill="#2d3436"/>
+  
+  <!-- Dimmed eye highlights showing avoidance -->
+  <circle cx="84" cy="88" r="1" fill="#ffffff" opacity="0.6"/>
+  <circle cx="118" cy="88" r="1" fill="#ffffff" opacity="0.6"/>
+  
+  <!-- Subtle under-eye tension -->
+  <path d="M 78 91 Q 84 93 90 91" stroke="#b2bec3" stroke-width="0.6" fill="none" opacity="0.3"/>
+  <path d="M 110 91 Q 116 93 122 91" stroke="#b2bec3" stroke-width="0.6" fill="none" opacity="0.3"/>
+  
+  <!-- Nose with normal definition -->
+  <path d="M 100 98 L 98 108 L 100 110 L 102 108 Z" fill="#e17055" stroke="#d63031" stroke-width="0.5"/>
+  
+  <!-- Mouth with shy, uncertain expression -->
+  <path d="M 92 118 Q 100 116 108 118" stroke="#2d3436" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  
+  <!-- Lip definition with nervousness -->
+  <path d="M 94 118 Q 100 117 106 118" stroke="#e17055" stroke-width="0.8" fill="none" opacity="0.6"/>
+  
+  <!-- Subtle mouth tension -->
+  <circle cx="92" cy="118" r="0.8" fill="#d63031" opacity="0.4"/>
+  <circle cx="108" cy="118" r="0.8" fill="#d63031" opacity="0.4"/>
+  
+  <!-- Gentle nasolabial folds -->
+  <path d="M 90 108 Q 92 113 94 118" stroke="#b2bec3" stroke-width="0.6" fill="none" opacity="0.3"/>
+  <path d="M 110 108 Q 108 113 106 118" stroke="#b2bec3" stroke-width="0.6" fill="none" opacity="0.3"/>
+  
+  <!-- Discrete blush on cheeks -->
+  <ellipse cx="78" cy="103" rx="6" ry="8" fill="url(#blushGradient)" opacity="0.6"/>
+  <ellipse cx="122" cy="103" rx="6" ry="8" fill="url(#blushGradient)" opacity="0.6"/>
+  
+  <!-- Additional subtle blush spots -->
+  <circle cx="75" cy="100" r="3" fill="#fab1a0" opacity="0.3"/>
+  <circle cx="125" cy="100" r="3" fill="#fab1a0" opacity="0.3"/>
+  
+  <!-- Cheek definition with shy tension -->
+  <ellipse cx="76" cy="105" rx="7" ry="10" fill="#e17055" opacity="0.2"/>
+  <ellipse cx="124" cy="105" rx="7" ry="10" fill="#e17055" opacity="0.2"/>
+  
+  <!-- Chin with slight lowering -->
+  <ellipse cx="100" cy="133" rx="14" ry="7" fill="#e17055" opacity="0.3"/>
+  
+  <!-- Jawline showing mild tension -->
+  <path d="M 72 123 Q 86 138 100 138 Q 114 138 128 123" stroke="#d63031" stroke-width="0.6" fill="none" opacity="0.4"/>
+  
+  <!-- Neck with slightly lowered posture -->
+  <rect x="91" y="143" width="18" height="14" fill="#fdcb6e" stroke="#e17055" stroke-width="0.5" opacity="0.7"/>
+  
+  <!-- Head slightly tilted down -->
+  <g transform="rotate(-2 100 100)">
+    <!-- Subtle nervous lines -->
+    <path d="M 95 93 Q 100 95 105 93" stroke="#ffffff" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <path d="M 88 103 Q 92 105 96 103" stroke="#ffffff" stroke-width="0.3" fill="none" opacity="0.2"/>
+    <path d="M 104 103 Q 108 105 112 103" stroke="#ffffff" stroke-width="0.3" fill="none" opacity="0.2"/>
+  </g>
+  
+  <!-- Gentle shadow for depth -->
+  <ellipse cx="100" cy="165" rx="32" ry="7" fill="#2d3436" opacity="0.08"/>
+  
+  <!-- Subtle embarrassment sparkles -->
+  <circle cx="72" cy="75" r="0.8" fill="#fab1a0" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.7;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="128" cy="80" r="0.6" fill="#e17055" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.6;0.4" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="110" cy="65" r="0.5" fill="#d63031" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

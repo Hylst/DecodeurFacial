@@ -1,0 +1,162 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Face gradient with deep sorrow -->
+    <radialGradient id="faceGradientIntenseSadness" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#e8d8d0"/>
+      <stop offset="70%" stop-color="#d8c8c0"/>
+      <stop offset="100%" stop-color="#c8b8b0"/>
+    </radialGradient>
+    
+    <!-- Intense sorrow aura -->
+    <radialGradient id="intenseSorrowAura" cx="0.5" cy="0.4" r="0.9">
+      <stop offset="0%" stop-color="rgba(150,150,180,0.2)"/>
+      <stop offset="100%" stop-color="rgba(120,120,160,0.3)"/>
+    </radialGradient>
+    
+    <!-- Eye gradient (very watery) -->
+    <radialGradient id="eyeGradientIntense" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f8f8ff"/>
+      <stop offset="100%" stop-color="#e8e8f8"/>
+    </radialGradient>
+    
+    <!-- Deep sadness shadow -->
+    <radialGradient id="deepSadnessShadow" cx="0.5" cy="0.6" r="0.8">
+      <stop offset="0%" stop-color="rgba(120,120,160,0.2)"/>
+      <stop offset="100%" stop-color="rgba(100,100,140,0.4)"/>
+    </radialGradient>
+    
+    <!-- Tear gradient -->
+    <radialGradient id="tearGradient" cx="0.3" cy="0.2" r="0.8">
+      <stop offset="0%" stop-color="rgba(220,240,255,0.9)"/>
+      <stop offset="100%" stop-color="rgba(180,220,255,0.7)"/>
+    </radialGradient>
+    
+    <!-- Crying distortion -->
+    <radialGradient id="cryingDistortion" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0%" stop-color="rgba(200,180,180,0.1)"/>
+      <stop offset="100%" stop-color="rgba(160,140,140,0.3)"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Intense sorrow aura -->
+  <ellipse cx="100" cy="112" rx="85" ry="95" fill="url(#intenseSorrowAura)"/>
+  
+  <!-- Crying distortion around face -->
+  <ellipse cx="100" cy="112" rx="75" ry="85" fill="url(#cryingDistortion)"/>
+  
+  <!-- Face outline (heavily drooped) -->
+  <ellipse cx="100" cy="112" rx="70" ry="80" fill="url(#faceGradientIntenseSadness)" stroke="#b4a894" stroke-width="1.5"/>
+  <ellipse cx="100" cy="115" rx="68" ry="78" fill="url(#deepSadnessShadow)"/>
+  
+  <!-- Hair (very disheveled) -->
+  <path d="M30 62 Q50 22 100 27 Q150 22 170 62 Q160 42 100 37 Q40 42 30 62" fill="#6a4a3c" stroke="#4d3428" stroke-width="0.5"/>
+  <path d="M50 52 Q65 42 80 47" stroke="#7d5b4a" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M120 47 Q135 42 150 52" stroke="#7d5b4a" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <!-- Messy strands -->
+  <path d="M45 45 Q50 35 55 45" stroke="#7d5b4a" stroke-width="0.6" fill="none" opacity="0.4"/>
+  <path d="M145 45 Q150 35 155 45" stroke="#7d5b4a" stroke-width="0.6" fill="none" opacity="0.4"/>
+  
+  <!-- Eyebrows (heavily downturned and furrowed) -->
+  <path d="M65 75 Q70 72 75 75" stroke="#4d3037" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M125 75 Q130 72 135 75" stroke="#4d3037" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Deep worry lines -->
+  <path d="M68 70 Q72 68 76 70" stroke="#c4a894" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M124 70 Q128 68 132 70" stroke="#c4a894" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M70 67 Q74 65 78 67" stroke="#c4a894" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M122 67 Q126 65 130 67" stroke="#c4a894" stroke-width="0.8" fill="none" opacity="0.5"/>
+  
+  <!-- Eyes (very droopy and swollen) -->
+  <ellipse cx="70" cy="85" rx="10" ry="6" fill="url(#eyeGradientIntense)" stroke="#b4a894" stroke-width="1"/>
+  <ellipse cx="130" cy="85" rx="10" ry="6" fill="url(#eyeGradientIntense)" stroke="#b4a894" stroke-width="1"/>
+  
+  <!-- Upper eyelids (very heavy and swollen) -->
+  <path d="M60 82 Q70 79 80 82" stroke="#b4a894" stroke-width="1.8" fill="none"/>
+  <path d="M120 82 Q130 79 140 82" stroke="#b4a894" stroke-width="1.8" fill="none"/>
+  
+  <!-- Lower eyelids (very puffy from crying) -->
+  <path d="M60 88 Q70 91 80 88" stroke="#c4a894" stroke-width="1.5" fill="none" opacity="0.8"/>
+  <path d="M120 88 Q130 91 140 88" stroke="#c4a894" stroke-width="1.5" fill="none" opacity="0.8"/>
+  
+  <!-- Pupils (looking down in despair) -->
+  <circle cx="70" cy="87" r="3" fill="#2c1810"/>
+  <circle cx="130" cy="87" r="3" fill="#2c1810"/>
+  
+  <!-- Eye highlights (very dim and watery) -->
+  <circle cx="71" cy="86" r="0.8" fill="#ffffff" opacity="0.5"/>
+  <circle cx="131" cy="86" r="0.8" fill="#ffffff" opacity="0.5"/>
+  
+  <!-- Heavy under-eye shadows -->
+  <ellipse cx="70" cy="91" rx="10" ry="4" fill="rgba(150,130,130,0.4)"/>
+  <ellipse cx="130" cy="91" rx="10" ry="4" fill="rgba(150,130,130,0.4)"/>
+  
+  <!-- Multiple tears (various sizes) -->
+  <ellipse cx="75" cy="92" rx="2" ry="4" fill="url(#tearGradient)"/>
+  <ellipse cx="78" cy="98" rx="1.5" ry="6" fill="url(#tearGradient)"/>
+  <ellipse cx="72" cy="105" rx="1.2" ry="4" fill="url(#tearGradient)"/>
+  <ellipse cx="135" cy="94" rx="1.8" ry="5" fill="url(#tearGradient)"/>
+  <ellipse cx="132" cy="102" rx="1.3" ry="5" fill="url(#tearGradient)"/>
+  
+  <!-- Tear tracks -->
+  <path d="M75 96 Q74 110 73 125" stroke="rgba(200,220,240,0.5)" stroke-width="1.5" fill="none"/>
+  <path d="M135 99 Q134 115 133 130" stroke="rgba(200,220,240,0.5)" stroke-width="1.5" fill="none"/>
+  
+  <!-- Nose (red and swollen from crying) -->
+  <path d="M95 95 L100 105 L105 95" stroke="#b4a894" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <ellipse cx="98" cy="102" rx="2" ry="2.5" fill="#d4a4a4" opacity="0.6"/>
+  <ellipse cx="102" cy="102" rx="2" ry="2.5" fill="#d4a4a4" opacity="0.6"/>
+  
+  <!-- Nose redness from crying -->
+  <ellipse cx="100" cy="100" rx="6" ry="8" fill="rgba(220,160,160,0.3)"/>
+  
+  <!-- Mouth (deeply downturned, open in sob) -->
+  <ellipse cx="100" cy="132" rx="8" ry="6" fill="#8b4513" opacity="0.4"/>
+  <path d="M85 135 Q100 128 115 135" stroke="#b4a894" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Lip definition (trembling) -->
+  <path d="M87 133 Q100 127 113 133" stroke="#c4a894" stroke-width="1" fill="none" opacity="0.7"/>
+  
+  <!-- Mouth corners (deeply downturned) -->
+  <path d="M83 137 Q85 140 87 137" stroke="#c4a894" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M113 137 Q115 140 117 137" stroke="#c4a894" stroke-width="1" fill="none" opacity="0.6"/>
+  
+  <!-- Deep nasolabial folds -->
+  <path d="M105 105 Q115 115 117 125" stroke="#d4a894" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M95 105 Q85 115 83 125" stroke="#d4a894" stroke-width="1.5" fill="none" opacity="0.7"/>
+  
+  <!-- Cheek definition (sunken from crying) -->
+  <path d="M118 113 Q122 118 120 123" stroke="#d8c8c0" stroke-width="1.2" fill="none" opacity="0.5"/>
+  <path d="M82 113 Q78 118 80 123" stroke="#d8c8c0" stroke-width="1.2" fill="none" opacity="0.5"/>
+  
+  <!-- Additional sorrow lines -->
+  <path d="M90 120 Q95 125 100 120" stroke="#d4a894" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M100 120 Q105 125 110 120" stroke="#d4a894" stroke-width="0.8" fill="none" opacity="0.4"/>
+  
+  <!-- Chin and jawline (drooped) -->
+  <path d="M82 155 Q100 157 118 155" stroke="#c4a894" stroke-width="1.2" fill="none" opacity="0.5"/>
+  <path d="M72 140 Q87 145 100 143" stroke="#d8c8c0" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M100 143 Q113 145 128 140" stroke="#d8c8c0" stroke-width="1" fill="none" opacity="0.4"/>
+  
+  <!-- Neck -->
+  <path d="M88 180 Q100 183 112 180" stroke="#d8c8c0" stroke-width="1" fill="none" opacity="0.4"/>
+  
+  <!-- Sobbing breath lines -->
+  <path d="M85 145 Q90 150 95 145" stroke="rgba(180,200,220,0.3)" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M105 145 Q110 150 115 145" stroke="rgba(180,200,220,0.3)" stroke-width="1" fill="none" opacity="0.5"/>
+  
+  <!-- Sorrow energy lines -->
+  <path d="M40 100 Q50 95 60 100" stroke="rgba(150,150,180,0.4)" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M140 100 Q150 95 160 100" stroke="rgba(150,150,180,0.4)" stroke-width="1.5" fill="none" opacity="0.6"/>
+  
+  <!-- Heavy shadow -->
+  <ellipse cx="100" cy="182" rx="55" ry="10" fill="rgba(120,120,160,0.3)"/>
+  
+  <!-- Intense sorrow aura -->
+  <ellipse cx="100" cy="112" rx="72" ry="82" fill="none" stroke="rgba(150,150,180,0.3)" stroke-width="1.5"/>
+  
+  <!-- Additional tear drops -->
+  <circle cx="68" cy="115" r="1" fill="url(#tearGradient)"/>
+  <circle cx="138" cy="118" r="0.8" fill="url(#tearGradient)"/>
+  <circle cx="75" cy="125" r="0.6" fill="url(#tearGradient)"/>
+</svg>

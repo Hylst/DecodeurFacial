@@ -1,0 +1,118 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Face gradient with mild irritation -->
+    <radialGradient id="faceGradientMildAnger" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#f8e0d0"/>
+      <stop offset="70%" stop-color="#f0d0c0"/>
+      <stop offset="100%" stop-color="#e8c0b0"/>
+    </radialGradient>
+    
+    <!-- Mild irritation aura -->
+    <radialGradient id="mildIrritationAura" cx="0.5" cy="0.3" r="0.9">
+      <stop offset="0%" stop-color="rgba(220,180,160,0.1)"/>
+      <stop offset="100%" stop-color="rgba(200,160,140,0.15)"/>
+    </radialGradient>
+    
+    <!-- Eye gradient -->
+    <radialGradient id="eyeGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="80%" stop-color="#f8f8f8"/>
+      <stop offset="100%" stop-color="#f0f0f0"/>
+    </radialGradient>
+    
+    <!-- Subtle tension shadow -->
+    <radialGradient id="subtleTensionShadow" cx="0.5" cy="0.4" r="0.8">
+      <stop offset="0%" stop-color="rgba(200,160,140,0.1)"/>
+      <stop offset="100%" stop-color="rgba(180,140,120,0.2)"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Mild irritation aura -->
+  <ellipse cx="100" cy="105" rx="80" ry="90" fill="url(#mildIrritationAura)"/>
+  
+  <!-- Face outline -->
+  <ellipse cx="100" cy="105" rx="70" ry="80" fill="url(#faceGradientMildAnger)" stroke="#d4a084" stroke-width="1.2"/>
+  <ellipse cx="100" cy="107" rx="68" ry="78" fill="url(#subtleTensionShadow)"/>
+  
+  <!-- Hair -->
+  <path d="M30 55 Q50 15 100 20 Q150 15 170 55 Q160 35 100 30 Q40 35 30 55" fill="#8b5a3c" stroke="#6d4428" stroke-width="0.5"/>
+  <path d="M50 45 Q65 35 80 40" stroke="#9d6b4a" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M120 40 Q135 35 150 45" stroke="#9d6b4a" stroke-width="0.8" fill="none" opacity="0.5"/>
+  
+  <!-- Eyebrows (slightly furrowed) -->
+  <path d="M62 72 Q70 69 78 72" stroke="#5d4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M122 72 Q130 69 138 72" stroke="#5d4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Subtle frown lines -->
+  <path d="M95 65 Q100 63 105 65" stroke="#d4a894" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M97 68 Q100 66 103 68" stroke="#d4a894" stroke-width="0.6" fill="none" opacity="0.3"/>
+  
+  <!-- Eyes (slightly narrowed) -->
+  <ellipse cx="70" cy="80" rx="10" ry="6" fill="url(#eyeGradient)" stroke="#d4a084" stroke-width="0.8"/>
+  <ellipse cx="130" cy="80" rx="10" ry="6" fill="url(#eyeGradient)" stroke="#d4a084" stroke-width="0.8"/>
+  
+  <!-- Upper eyelids (slightly tense) -->
+  <path d="M60 77 Q70 75 80 77" stroke="#d4a084" stroke-width="1.2" fill="none"/>
+  <path d="M120 77 Q130 75 140 77" stroke="#d4a084" stroke-width="1.2" fill="none"/>
+  
+  <!-- Lower eyelids (slight tension) -->
+  <path d="M60 83 Q70 85 80 83" stroke="#e0b094" stroke-width="0.8" fill="none" opacity="0.6"/>
+  <path d="M120 83 Q130 85 140 83" stroke="#e0b094" stroke-width="0.8" fill="none" opacity="0.6"/>
+  
+  <!-- Pupils (focused, slightly intense) -->
+  <circle cx="70" cy="80" r="3.5" fill="#2c1810"/>
+  <circle cx="130" cy="80" r="3.5" fill="#2c1810"/>
+  
+  <!-- Eye highlights (sharp) -->
+  <circle cx="71" cy="79" r="1" fill="#ffffff" opacity="0.8"/>
+  <circle cx="131" cy="79" r="1" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Subtle tension lines around eyes -->
+  <path d="M80 78 Q83 76 85 79" stroke="#e0b094" stroke-width="0.6" fill="none" opacity="0.4"/>
+  <path d="M140 78 Q143 76 145 79" stroke="#e0b094" stroke-width="0.6" fill="none" opacity="0.4"/>
+  
+  <!-- Nose (slightly flared) -->
+  <path d="M95 90 L100 100 L105 90" stroke="#d4a084" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <ellipse cx="98" cy="97" rx="1.8" ry="2.2" fill="#d4a084" opacity="0.4"/>
+  <ellipse cx="102" cy="97" rx="1.8" ry="2.2" fill="#d4a084" opacity="0.4"/>
+  
+  <!-- Slight nostril flare -->
+  <path d="M96 99 Q98 101 100 99" stroke="#c49074" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M100 99 Q102 101 104 99" stroke="#c49074" stroke-width="0.8" fill="none" opacity="0.5"/>
+  
+  <!-- Mouth (slightly tense, neutral to slight frown) -->
+  <path d="M88 125 Q100 124 112 125" stroke="#d4a084" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Lip definition -->
+  <path d="M90 123 Q100 122 110 123" stroke="#e0b094" stroke-width="0.8" fill="none" opacity="0.6"/>
+  
+  <!-- Subtle mouth tension -->
+  <path d="M86 127 Q88 129 90 127" stroke="#e0b094" stroke-width="0.6" fill="none" opacity="0.5"/>
+  <path d="M110 127 Q112 129 114 127" stroke="#e0b094" stroke-width="0.6" fill="none" opacity="0.5"/>
+  
+  <!-- Mild nasolabial folds -->
+  <path d="M105 100 Q110 110 112 120" stroke="#e8c0a8" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M95 100 Q90 110 88 120" stroke="#e8c0a8" stroke-width="0.8" fill="none" opacity="0.4"/>
+  
+  <!-- Cheek definition -->
+  <path d="M115 108 Q118 113 116 118" stroke="#f0d0c0" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M85 108 Q82 113 84 118" stroke="#f0d0c0" stroke-width="0.8" fill="none" opacity="0.3"/>
+  
+  <!-- Jaw tension (subtle) -->
+  <path d="M85 150 Q100 151 115 150" stroke="#e0b094" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M75 135 Q90 140 100 138" stroke="#e8c0a8" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M100 138 Q110 140 125 135" stroke="#e8c0a8" stroke-width="0.8" fill="none" opacity="0.3"/>
+  
+  <!-- Neck -->
+  <path d="M90 175 Q100 178 110 175" stroke="#e8c0a8" stroke-width="0.8" fill="none" opacity="0.3"/>
+  
+  <!-- Subtle irritation lines -->
+  <path d="M45 85 Q55 80 65 85" stroke="rgba(220,180,160,0.3)" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M135 85 Q145 80 155 85" stroke="rgba(220,180,160,0.3)" stroke-width="1" fill="none" opacity="0.5"/>
+  
+  <!-- Gentle shadow -->
+  <ellipse cx="100" cy="175" rx="48" ry="7" fill="rgba(200,160,140,0.15)"/>
+  
+  <!-- Subtle tension aura -->
+  <ellipse cx="100" cy="105" rx="72" ry="82" fill="none" stroke="rgba(220,180,160,0.2)" stroke-width="1"/>
+</svg>

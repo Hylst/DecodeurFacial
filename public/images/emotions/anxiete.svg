@@ -1,32 +1,89 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <!-- Face outline -->
-  <ellipse cx="100" cy="110" rx="70" ry="80" fill="#fdbcb4" stroke="#333" stroke-width="2"/>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Face gradient with slight pallor -->
+    <radialGradient id="faceGradientAnxiety" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#f5d5c8"/>
+      <stop offset="70%" stop-color="#e8c4b8"/>
+      <stop offset="100%" stop-color="#d4a894"/>
+    </radialGradient>
+    
+    <!-- Stress shadow gradient -->
+    <radialGradient id="stressShadow" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0%" stop-color="rgba(180,160,140,0.1)"/>
+      <stop offset="100%" stop-color="rgba(120,100,80,0.3)"/>
+    </radialGradient>
+    
+    <!-- Eye gradient -->
+    <radialGradient id="eyeGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="80%" stop-color="#f8f8f8"/>
+      <stop offset="100%" stop-color="#e8e8e8"/>
+    </radialGradient>
+  </defs>
   
-  <!-- Hair -->
-  <path d="M30 60 Q50 20 100 25 Q150 20 170 60 Q160 40 100 35 Q40 40 30 60" fill="#8b4513"/>
+  <!-- Face outline with stress shadow -->
+  <ellipse cx="100" cy="110" rx="72" ry="82" fill="url(#stressShadow)"/>
+  <ellipse cx="100" cy="110" rx="70" ry="80" fill="url(#faceGradientAnxiety)" stroke="#8b6f47" stroke-width="1.5"/>
   
-  <!-- Eyebrows (slightly furrowed, showing worry) -->
-  <path d="M60 75 Q70 70 80 75" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <path d="M120 75 Q130 70 140 75" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Hair with nervous texture -->
+  <path d="M30 60 Q45 15 100 20 Q155 15 170 60 Q165 35 140 30 Q120 25 100 28 Q80 25 60 30 Q35 35 30 60" fill="#7a4a2e" stroke="#654032" stroke-width="0.5"/>
   
-  <!-- Eyes (darting, avoiding contact) -->
-  <ellipse cx="70" cy="85" rx="12" ry="8" fill="white"/>
-  <ellipse cx="130" cy="85" rx="12" ry="8" fill="white"/>
-  <!-- Pupils looking away/down -->
-  <circle cx="67" cy="88" r="4" fill="#333"/>
-  <circle cx="127" cy="88" r="4" fill="#333"/>
+  <!-- Worry lines on forehead (multiple layers) -->
+  <path d="M70 62 Q100 55 130 62" stroke="#b8956f" stroke-width="1.2" fill="none" opacity="0.8"/>
+  <path d="M75 67 Q100 62 125 67" stroke="#c4a382" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M80 72 Q100 68 120 72" stroke="#d0af8f" stroke-width="0.8" fill="none" opacity="0.4"/>
   
-  <!-- Nose -->
-  <path d="M95 95 L100 105 L105 95" stroke="#333" stroke-width="1.5" fill="none"/>
+  <!-- Eyebrows (worried, asymmetrical) -->
+  <path d="M58 74 Q68 68 78 72 Q75 70 70 71" stroke="#5d4037" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M122 72 Q132 68 142 74 Q135 70 130 71" stroke="#5d4037" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Frown lines between eyebrows -->
+  <path d="M85 76 Q95 72 100 74" stroke="#a67c52" stroke-width="1" fill="none" opacity="0.7"/>
+  <path d="M100 74 Q105 72 115 76" stroke="#a67c52" stroke-width="1" fill="none" opacity="0.7"/>
+  
+  <!-- Eyes (darting, tense) -->
+  <ellipse cx="70" cy="85" rx="13" ry="9" fill="url(#eyeGradient)" stroke="#8b6f47" stroke-width="0.8"/>
+  <ellipse cx="130" cy="85" rx="13" ry="9" fill="url(#eyeGradient)" stroke="#8b6f47" stroke-width="0.8"/>
+  
+  <!-- Upper eyelids (tense) -->
+  <path d="M57 82 Q70 78 83 82" stroke="#8b6f47" stroke-width="1.5" fill="none"/>
+  <path d="M117 82 Q130 78 143 82" stroke="#8b6f47" stroke-width="1.5" fill="none"/>
+  
+  <!-- Pupils (looking away nervously) -->
+  <circle cx="66" cy="88" r="4.5" fill="#2c1810"/>
+  <circle cx="126" cy="88" r="4.5" fill="#2c1810"/>
+  
+  <!-- Eye highlights (nervous glint) -->
+  <circle cx="68" cy="86" r="1.5" fill="#ffffff" opacity="0.9"/>
+  <circle cx="128" cy="86" r="1.5" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Under-eye tension -->
+  <path d="M60 90 Q70 93 80 90" stroke="#c4a382" stroke-width="0.8" fill="none" opacity="0.6"/>
+  <path d="M120 90 Q130 93 140 90" stroke="#c4a382" stroke-width="0.8" fill="none" opacity="0.6"/>
+  
+  <!-- Nose with slight flare -->
+  <path d="M95 95 L100 105 L105 95" stroke="#8b6f47" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <ellipse cx="97" cy="102" rx="1.5" ry="2" fill="#8b6f47" opacity="0.4"/>
+  <ellipse cx="103" cy="102" rx="1.5" ry="2" fill="#8b6f47" opacity="0.4"/>
   
   <!-- Mouth (tense, slightly downturned) -->
-  <path d="M85 130 Q100 125 115 130" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M82 128 Q100 122 118 128" stroke="#8b6f47" stroke-width="2.2" fill="none" stroke-linecap="round"/>
   
-  <!-- Worry lines on forehead -->
-  <path d="M75 65 Q100 60 125 65" stroke="#333" stroke-width="1" fill="none" opacity="0.6"/>
-  <path d="M80 70 Q100 65 120 70" stroke="#333" stroke-width="1" fill="none" opacity="0.4"/>
+  <!-- Lip tension lines -->
+  <path d="M85 132 Q100 130 115 132" stroke="#a67c52" stroke-width="0.8" fill="none" opacity="0.5"/>
   
-  <!-- Subtle tension lines around eyes -->
-  <path d="M55 80 Q65 78 75 80" stroke="#333" stroke-width="0.5" fill="none" opacity="0.5"/>
-  <path d="M125 80 Q135 78 145 80" stroke="#333" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <!-- Nasolabial folds (stress lines) -->
+  <path d="M105 105 Q110 115 112 125" stroke="#b8956f" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M95 105 Q90 115 88 125" stroke="#b8956f" stroke-width="1" fill="none" opacity="0.6"/>
+  
+  <!-- Jaw tension -->
+  <path d="M75 145 Q85 148 95 145" stroke="#c4a382" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M105 145 Q115 148 125 145" stroke="#c4a382" stroke-width="0.8" fill="none" opacity="0.5"/>
+  
+  <!-- Subtle nervous sweat drops -->
+  <ellipse cx="85" cy="75" rx="1" ry="2" fill="#e8f4f8" opacity="0.7"/>
+  <ellipse cx="115" cy="78" rx="1" ry="2" fill="#e8f4f8" opacity="0.7"/>
+  
+  <!-- Neck tension lines -->
+  <path d="M90 185 Q100 188 110 185" stroke="#b8956f" stroke-width="0.8" fill="none" opacity="0.4"/>
 </svg>

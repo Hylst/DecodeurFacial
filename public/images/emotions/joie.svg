@@ -1,18 +1,46 @@
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Face circle -->
-  <circle cx="100" cy="100" r="80" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Face circle with gradient -->
+  <defs>
+    <radialGradient id="faceGradient" cx="0.3" cy="0.3">
+      <stop offset="0%" stop-color="#FEF3C7"/>
+      <stop offset="100%" stop-color="#FDE68A"/>
+    </radialGradient>
+    <radialGradient id="cheekGradient" cx="0.5" cy="0.5">
+      <stop offset="0%" stop-color="#FCA5A5" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FCA5A5" stop-opacity="0.3"/>
+    </radialGradient>
+  </defs>
   
-  <!-- Eyes (happy) -->
-  <path d="M 65 75 Q 75 70 85 75" stroke="#374151" stroke-width="3" fill="none"/>
-  <path d="M 115 75 Q 125 70 135 75" stroke="#374151" stroke-width="3" fill="none"/>
+  <circle cx="100" cy="100" r="80" fill="url(#faceGradient)" stroke="#F59E0B" stroke-width="2"/>
   
-  <!-- Nose -->
-  <ellipse cx="100" cy="100" rx="3" ry="6" fill="#F59E0B"/>
+  <!-- Eyebrows (raised and relaxed) -->
+  <path d="M 60 65 Q 75 60 90 65" stroke="#8B5CF6" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M 110 65 Q 125 60 140 65" stroke="#8B5CF6" stroke-width="4" stroke-linecap="round" fill="none"/>
   
-  <!-- Mouth (big smile) -->
-  <path d="M 75 120 Q 100 140 125 120" stroke="#374151" stroke-width="3" fill="none"/>
+  <!-- Eyes (crescent shaped from smiling) -->
+  <path d="M 65 75 Q 75 70 85 75 Q 75 80 65 75" fill="#374151"/>
+  <path d="M 115 75 Q 125 70 135 75 Q 125 80 115 75" fill="#374151"/>
   
-  <!-- Cheeks -->
-  <circle cx="60" cy="110" r="8" fill="#FCA5A5" opacity="0.6"/>
-  <circle cx="140" cy="110" r="8" fill="#FCA5A5" opacity="0.6"/>
+  <!-- Crow's feet (laugh lines) -->
+  <path d="M 85 72 L 92 70" stroke="#D97706" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 87 78 L 94 78" stroke="#D97706" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 115 72 L 108 70" stroke="#D97706" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 113 78 L 106 78" stroke="#D97706" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Nose with subtle shading -->
+  <ellipse cx="100" cy="100" rx="4" ry="7" fill="#F59E0B"/>
+  <ellipse cx="98" cy="98" rx="1.5" ry="2" fill="#FEF3C7" opacity="0.7"/>
+  
+  <!-- Mouth (genuine smile) -->
+  <path d="M 70 120 Q 100 145 130 120" stroke="#7C2D12" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Teeth showing -->
+  <path d="M 80 125 Q 100 135 120 125" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  
+  <!-- Cheeks (raised from smiling) -->
+  <ellipse cx="60" cy="110" rx="12" ry="10" fill="url(#cheekGradient)"/>
+  <ellipse cx="140" cy="110" rx="12" ry="10" fill="url(#cheekGradient)"/>
+  
+  <!-- Dimples -->
+  <circle cx="75" cy="115" r="2" fill="#F59E0B" opacity="0.4"/>
+  <circle cx="125" cy="115" r="2" fill="#F59E0B" opacity="0.4"/>
 </svg>

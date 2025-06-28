@@ -1,0 +1,181 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Face gradient with panic pallor -->
+    <radialGradient id="faceGradientIntenseAnxiety" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#f0e8e0"/>
+      <stop offset="70%" stop-color="#e8d8d0"/>
+      <stop offset="100%" stop-color="#e0c8c0"/>
+    </radialGradient>
+    
+    <!-- Intense panic aura -->
+    <radialGradient id="intensePanicAura" cx="0.5" cy="0.3" r="0.9">
+      <stop offset="0%" stop-color="rgba(200,180,160,0.3)"/>
+      <stop offset="100%" stop-color="rgba(180,160,140,0.4)"/>
+    </radialGradient>
+    
+    <!-- Eye gradient (extremely tense) -->
+    <radialGradient id="eyeGradientPanic" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f8f8f8"/>
+      <stop offset="100%" stop-color="#f0f0f0"/>
+    </radialGradient>
+    
+    <!-- Panic energy -->
+    <radialGradient id="panicEnergyIntense" cx="0.5" cy="0.4" r="0.8">
+      <stop offset="0%" stop-color="rgba(190,170,150,0.2)"/>
+      <stop offset="100%" stop-color="rgba(170,150,130,0.3)"/>
+    </radialGradient>
+    
+    <!-- Trembling effect -->
+    <radialGradient id="tremblingEffectAnxiety" cx="0.5" cy="0.5" r="0.8">
+      <stop offset="0%" stop-color="rgba(180,160,140,0.1)"/>
+      <stop offset="100%" stop-color="rgba(160,140,120,0.2)"/>
+    </radialGradient>
+    
+    <!-- Stress sweat -->
+    <radialGradient id="stressSweat" cx="0.3" cy="0.2" r="0.6">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.7)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.2)"/>
+    </radialGradient>
+    
+    <!-- Overwhelming worry -->
+    <radialGradient id="overwhelmingWorry" cx="0.5" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="rgba(170,150,130,0.2)"/>
+      <stop offset="100%" stop-color="rgba(150,130,110,0.3)"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Intense panic aura -->
+  <ellipse cx="100" cy="105" rx="95" ry="105" fill="url(#intensePanicAura)"/>
+  
+  <!-- Panic energy bursts -->
+  <ellipse cx="100" cy="105" rx="80" ry="90" fill="url(#panicEnergyIntense)"/>
+  
+  <!-- Trembling effect -->
+  <ellipse cx="102" cy="107" rx="75" ry="85" fill="url(#tremblingEffectAnxiety)"/>
+  <ellipse cx="98" cy="103" rx="73" ry="83" fill="url(#tremblingEffectAnxiety)"/>
+  
+  <!-- Overwhelming worry cloud -->
+  <ellipse cx="100" cy="95" rx="85" ry="75" fill="url(#overwhelmingWorry)"/>
+  
+  <!-- Face outline (pale and trembling) -->
+  <ellipse cx="100" cy="105" rx="70" ry="80" fill="url(#faceGradientIntenseAnxiety)" stroke="#d0c0b0" stroke-width="2"/>
+  
+  <!-- Hair (extremely disheveled) -->
+  <path d="M25 50 Q45 5 100 10 Q155 5 175 50 Q165 25 100 20 Q35 25 25 50" fill="#8b5a3c" stroke="#6d4428" stroke-width="0.5"/>
+  <path d="M45 35 Q60 25 75 30" stroke="#9d6b4a" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M125 30 Q140 25 155 35" stroke="#9d6b4a" stroke-width="1" fill="none" opacity="0.6"/>
+  <!-- Extremely messy panic hair -->
+  <path d="M30 40 Q35 20 40 45" stroke="#9d6b4a" stroke-width="1.2" fill="none" opacity="0.7"/>
+  <path d="M160 45 Q165 20 170 40" stroke="#9d6b4a" stroke-width="1.2" fill="none" opacity="0.7"/>
+  <path d="M50 25 Q55 15 60 35" stroke="#9d6b4a" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M140 35 Q145 15 150 25" stroke="#9d6b4a" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M40 30 Q45 10 50 40" stroke="#9d6b4a" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M150 40 Q155 10 160 30" stroke="#9d6b4a" stroke-width="0.8" fill="none" opacity="0.5"/>
+  
+  <!-- Eyebrows (extremely furrowed and raised) -->
+  <path d="M55 70 Q70 60 85 68" stroke="#5d3428" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M115 68 Q130 60 145 70" stroke="#5d3428" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Deep worry lines -->
+  <path d="M88 50 Q100 45 112 50" stroke="#d0c0b0" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M90 53 Q100 48 110 53" stroke="#d0c0b0" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M92 56 Q100 51 108 56" stroke="#d0c0b0" stroke-width="1.2" fill="none" opacity="0.6"/>
+  <path d="M94 59 Q100 54 106 59" stroke="#d0c0b0" stroke-width="1" fill="none" opacity="0.5"/>
+  
+  <!-- Eyes (wide with panic) -->
+  <ellipse cx="70" cy="82" rx="16" ry="14" fill="url(#eyeGradientPanic)" stroke="#d0c0b0" stroke-width="1.5"/>
+  <ellipse cx="130" cy="82" rx="16" ry="14" fill="url(#eyeGradientPanic)" stroke="#d0c0b0" stroke-width="1.5"/>
+  
+  <!-- Upper eyelids (raised in panic) -->
+  <path d="M54 72 Q70 65 86 72" stroke="#d0c0b0" stroke-width="2" fill="none"/>
+  <path d="M114 72 Q130 65 146 72" stroke="#d0c0b0" stroke-width="2" fill="none"/>
+  
+  <!-- Lower eyelids (extremely tense) -->
+  <path d="M54 92 Q70 99 86 92" stroke="#e0d0c0" stroke-width="1.5" fill="none" opacity="0.8"/>
+  <path d="M114 92 Q130 99 146 92" stroke="#e0d0c0" stroke-width="1.5" fill="none" opacity="0.8"/>
+  
+  <!-- Pupils (extremely dilated) -->
+  <circle cx="70" cy="82" r="5.5" fill="#1c0810"/>
+  <circle cx="130" cy="82" r="5.5" fill="#1c0810"/>
+  
+  <!-- Eye highlights (panicked) -->
+  <circle cx="72" cy="80" r="1.2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="132" cy="80" r="1.2" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Panic whites visible -->
+  <path d="M58 78 Q65 72 72 78" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M68 86 Q75 92 82 86" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M118 78 Q125 72 132 78" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M128 86 Q135 92 142 86" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+  
+  <!-- Extreme under-eye bags -->
+  <path d="M60 95 Q70 100 80 95" stroke="#e0d0c0" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M120 95 Q130 100 140 95" stroke="#e0d0c0" stroke-width="2" fill="none" opacity="0.7"/>
+  
+  <!-- Nose (flared with panic breathing) -->
+  <path d="M92 88 L100 105 L108 88" stroke="#d0c0b0" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <ellipse cx="96" cy="102" rx="2.5" ry="3" fill="#d0c0b0" opacity="0.6"/>
+  <ellipse cx="104" cy="102" rx="2.5" ry="3" fill="#d0c0b0" opacity="0.6"/>
+  
+  <!-- Panic breathing flare -->
+  <path d="M94 104 Q96 108 98 104" stroke="#c0b0a0" stroke-width="1.2" fill="none" opacity="0.7"/>
+  <path d="M102 104 Q104 108 106 104" stroke="#c0b0a0" stroke-width="1.2" fill="none" opacity="0.7"/>
+  
+  <!-- Mouth (open in panic) -->
+  <ellipse cx="100" cy="128" rx="12" ry="8" fill="#c0b0a0" stroke="#d0c0b0" stroke-width="2"/>
+  
+  <!-- Lip definition (trembling) -->
+  <path d="M88 125 Q100 122 112 125" stroke="#e0d0c0" stroke-width="1.5" fill="none" opacity="0.8"/>
+  
+  <!-- Extreme mouth tension -->
+  <path d="M85 130 Q88 136 92 130" stroke="#e0d0c0" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M108 130 Q112 136 115 130" stroke="#e0d0c0" stroke-width="1.5" fill="none" opacity="0.7"/>
+  
+  <!-- Deep nasolabial folds -->
+  <path d="M108 105 Q118 115 116 125" stroke="#e0d0c0" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M92 105 Q82 115 84 125" stroke="#e0d0c0" stroke-width="2" fill="none" opacity="0.8"/>
+  
+  <!-- Cheek tension (sunken with stress) -->
+  <path d="M125 110 Q135 115 130 125" stroke="#f0e0d0" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M75 110 Q65 115 70 125" stroke="#f0e0d0" stroke-width="1.5" fill="none" opacity="0.6"/>
+  
+  <!-- Stress lines -->
+  <path d="M75 120 Q80 125 85 120" stroke="#e0d0c0" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M115 120 Q120 125 125 120" stroke="#e0d0c0" stroke-width="1" fill="none" opacity="0.5"/>
+  
+  <!-- Jaw tension (clenched) -->
+  <path d="M75 150 Q100 153 125 150" stroke="#e0d0c0" stroke-width="2" fill="none" opacity="0.7"/>
+  
+  <!-- Neck tension (rigid with panic) -->
+  <path d="M85 175 Q100 178 115 175" stroke="#f0e0d0" stroke-width="1.5" fill="none" opacity="0.5"/>
+  
+  <!-- Stress sweat drops -->
+  <ellipse cx="85" cy="75" rx="2" ry="4" fill="url(#stressSweat)"/>
+  <ellipse cx="115" cy="80" rx="1.5" ry="3" fill="url(#stressSweat)"/>
+  <ellipse cx="90" cy="115" rx="1" ry="2" fill="url(#stressSweat)"/>
+  <ellipse cx="110" cy="110" rx="1.2" ry="2.5" fill="url(#stressSweat)"/>
+  
+  <!-- Panic energy bursts -->
+  <path d="M20 70 Q30 60 40 70" stroke="rgba(180,160,140,0.6)" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M160 70 Q170 60 180 70" stroke="rgba(180,160,140,0.6)" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M25 110 Q35 100 45 110" stroke="rgba(180,160,140,0.5)" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M155 110 Q165 100 175 110" stroke="rgba(180,160,140,0.5)" stroke-width="1.5" fill="none" opacity="0.6"/>
+  
+  <!-- Overwhelming worry waves -->
+  <path d="M15 80 Q25 70 35 80 Q45 90 55 80" stroke="rgba(170,150,130,0.4)" stroke-width="1.5" fill="none"/>
+  <path d="M145 80 Q155 70 165 80 Q175 90 185 80" stroke="rgba(170,150,130,0.4)" stroke-width="1.5" fill="none"/>
+  
+  <!-- Trembling shadow -->
+  <ellipse cx="98" cy="175" rx="55" ry="10" fill="rgba(170,150,130,0.3)"/>
+  <ellipse cx="102" cy="177" rx="53" ry="9" fill="rgba(170,150,130,0.2)"/>
+  
+  <!-- Intense panic aura -->
+  <ellipse cx="100" cy="105" rx="72" ry="82" fill="none" stroke="rgba(180,160,140,0.4)" stroke-width="2"/>
+  
+  <!-- Panic sparks -->
+  <circle cx="20" cy="85" r="1.5" fill="rgba(180,160,140,0.7)"/>
+  <circle cx="180" cy="90" r="1.2" fill="rgba(180,160,140,0.6)"/>
+  <circle cx="15" cy="120" r="1" fill="rgba(180,160,140,0.5)"/>
+  <circle cx="185" cy="115" r="0.8" fill="rgba(180,160,140,0.4)"/>
+</svg>

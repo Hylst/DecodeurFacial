@@ -1,0 +1,189 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Intense Jealousy: Destructive jealousy, dark glare, traits deformed by envy -->
+  
+  <!-- Definitions for gradients and effects -->
+  <defs>
+    <!-- Face gradient with intense envy corruption -->
+    <radialGradient id="faceGradientIntense" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#fdcb6e" stop-opacity="0.7"/>
+      <stop offset="40%" stop-color="#00b894" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00a085" stop-opacity="0.8"/>
+    </radialGradient>
+    
+    <!-- Eye gradient with malicious envy -->
+    <radialGradient id="eyeGradientIntense" cx="70%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#00a085" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#00b894" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#2d3436" stop-opacity="0.9"/>
+    </radialGradient>
+    
+    <!-- Intense envy aura -->
+    <radialGradient id="envyAuraIntense" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#00a085" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#00b894" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#2d3436" stop-opacity="0.1"/>
+    </radialGradient>
+    
+    <!-- Malicious glow filter -->
+    <filter id="maliciousGlow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Corruption effect -->
+    <filter id="corruption">
+      <feTurbulence baseFrequency="0.03" numOctaves="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1"/>
+    </filter>
+  </defs>
+  
+  <!-- Background aura of destructive envy -->
+  <circle cx="100" cy="100" r="95" fill="url(#envyAuraIntense)" opacity="0.8"/>
+  
+  <!-- Corruption waves -->
+  <ellipse cx="100" cy="95" rx="60" ry="65" fill="none" stroke="#00a085" stroke-width="1.2" opacity="0.4" filter="url(#corruption)"/>
+  <ellipse cx="100" cy="95" rx="55" ry="60" fill="none" stroke="#00b894" stroke-width="0.8" opacity="0.3" filter="url(#corruption)"/>
+  
+  <!-- Face shape with extreme asymmetry and distortion -->
+  <ellipse cx="102" cy="98" rx="42" ry="46" fill="url(#faceGradientIntense)" stroke="#00a085" stroke-width="1.5" transform="rotate(-5 102 98)"/>
+  
+  <!-- Hair disheveled by jealous rage -->
+  <path d="M 58 70 Q 70 48 102 50 Q 134 48 142 70 Q 138 58 115 62 Q 102 58 87 62 Q 62 58 58 70" 
+        fill="#6c5ce7" stroke="#a29bfe" stroke-width="1.2"/>
+  
+  <!-- Extremely disheveled hair from jealous fury -->
+  <path d="M 60 60 Q 65 52 75 60" stroke="#a29bfe" stroke-width="2.2" fill="none" opacity="0.9"/>
+  <path d="M 125 60 Q 135 52 140 60" stroke="#a29bfe" stroke-width="2.2" fill="none" opacity="0.9"/>
+  <path d="M 72 57 Q 78 50 85 57" stroke="#a29bfe" stroke-width="1.8" fill="none" opacity="0.7"/>
+  <path d="M 115 57 Q 122 50 128 57" stroke="#a29bfe" stroke-width="1.8" fill="none" opacity="0.7"/>
+  <path d="M 90 55 Q 95 48 100 55" stroke="#a29bfe" stroke-width="1.5" fill="none" opacity="0.6"/>
+  
+  <!-- Eyebrows extremely asymmetric and furrowed with rage -->
+  <path d="M 74 76 Q 85 72 96 76" stroke="#2d3436" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 106 74 Q 117 70 128 74" stroke="#2d3436" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Deep jealous rage lines -->
+  <path d="M 86 74 Q 90 70 94 74" stroke="#b2bec3" stroke-width="1.5" fill="none" opacity="0.8"/>
+  <path d="M 108 72 Q 112 68 116 72" stroke="#b2bec3" stroke-width="1.5" fill="none" opacity="0.8"/>
+  <path d="M 88 76 Q 92 73 96 76" stroke="#b2bec3" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M 104 74 Q 108 71 112 74" stroke="#b2bec3" stroke-width="1" fill="none" opacity="0.6"/>
+  
+  <!-- Additional rage furrows -->
+  <path d="M 82 78 Q 86 75 90 78" stroke="#b2bec3" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M 110 76 Q 114 73 118 76" stroke="#b2bec3" stroke-width="0.8" fill="none" opacity="0.5"/>
+  
+  <!-- Eyes with malicious, piercing stare -->
+  <ellipse cx="83" cy="88" rx="6" ry="4" fill="url(#eyeGradientIntense)" transform="rotate(-8 83 88)"/>
+  <ellipse cx="118" cy="88" rx="6" ry="4" fill="url(#eyeGradientIntense)" transform="rotate(8 118 88)"/>
+  
+  <!-- Extremely narrowed, malicious eyelids -->
+  <path d="M 77 86 Q 83 83 89 86" stroke="#2d3436" stroke-width="2" fill="none" opacity="0.9"/>
+  <path d="M 112 86 Q 118 83 124 86" stroke="#2d3436" stroke-width="2" fill="none" opacity="0.9"/>
+  
+  <!-- Pupils with intense, focused malice -->
+  <circle cx="85" cy="89" r="2" fill="#2d3436"/>
+  <circle cx="116" cy="89" r="2" fill="#2d3436"/>
+  
+  <!-- Malicious glints in eyes -->
+  <circle cx="86" cy="87" r="0.6" fill="#00a085" opacity="0.9"/>
+  <circle cx="117" cy="87" r="0.6" fill="#00a085" opacity="0.9"/>
+  
+  <!-- Additional sinister highlights -->
+  <circle cx="84" cy="88" r="0.3" fill="#00cec9" opacity="0.7"/>
+  <circle cx="115" cy="88" r="0.3" fill="#00cec9" opacity="0.7"/>
+  
+  <!-- Extreme under-eye bags from jealous obsession -->
+  <path d="M 77 91 Q 83 94 89 91" stroke="#b2bec3" stroke-width="1.8" fill="none" opacity="0.7"/>
+  <path d="M 112 91 Q 118 94 124 91" stroke="#b2bec3" stroke-width="1.8" fill="none" opacity="0.7"/>
+  
+  <!-- Additional stress and obsession lines -->
+  <path d="M 79 93 Q 83 95 87 93" stroke="#b2bec3" stroke-width="1.2" fill="none" opacity="0.5"/>
+  <path d="M 114 93 Q 118 95 122 93" stroke="#b2bec3" stroke-width="1.2" fill="none" opacity="0.5"/>
+  
+  <!-- Nose with extreme flare and distortion -->
+  <path d="M 102 100 L 98 110 L 102 112 L 106 110 Z" fill="#e17055" stroke="#d63031" stroke-width="1"/>
+  
+  <!-- Extreme nostril flare from rage -->
+  <ellipse cx="98" cy="108" rx="2.5" ry="1.5" fill="#d63031" opacity="0.8"/>
+  <ellipse cx="106" cy="108" rx="2.5" ry="1.5" fill="#d63031" opacity="0.8"/>
+  
+  <!-- Mouth twisted by jealous rage -->
+  <path d="M 88 120 Q 102 118 112 120" stroke="#2d3436" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Extremely asymmetric lip definition -->
+  <path d="M 90 120 Q 102 119 110 120" stroke="#e17055" stroke-width="1.2" fill="none" opacity="0.8"/>
+  
+  <!-- Extreme mouth tension and asymmetry -->
+  <circle cx="88" cy="120" r="1.5" fill="#d63031" opacity="0.8"/>
+  <circle cx="112" cy="120" r="1.8" fill="#d63031" opacity="0.9"/>
+  
+  <!-- Mouth corners severely distorted -->
+  <path d="M 86 120 Q 88 123 90 120" stroke="#2d3436" stroke-width="1.5" fill="none" opacity="0.8"/>
+  <path d="M 110 120 Q 112 123 114 120" stroke="#2d3436" stroke-width="1.5" fill="none" opacity="0.8"/>
+  
+  <!-- Extreme asymmetric nasolabial folds -->
+  <path d="M 86 110 Q 88 115 90 120" stroke="#b2bec3" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M 114 110 Q 112 115 110 120" stroke="#b2bec3" stroke-width="1.8" fill="none" opacity="0.8"/>
+  
+  <!-- Cheek definition with extreme asymmetric distortion -->
+  <ellipse cx="75" cy="108" rx="8" ry="12" fill="#e17055" opacity="0.4"/>
+  <ellipse cx="126" cy="108" rx="10" ry="14" fill="#e17055" opacity="0.5"/>
+  
+  <!-- Chin severely distorted by jealous expression -->
+  <ellipse cx="102" cy="135" rx="16" ry="8" fill="#e17055" opacity="0.5"/>
+  
+  <!-- Jawline extremely asymmetric and tense -->
+  <path d="M 70 125 Q 86 140 102 140 Q 118 140 130 125" stroke="#d63031" stroke-width="1.2" fill="none" opacity="0.7"/>
+  
+  <!-- Neck rigid with jealous tension -->
+  <rect x="90" y="145" width="20" height="12" fill="#fdcb6e" stroke="#e17055" stroke-width="1" opacity="0.8" transform="rotate(-3 100 151)"/>
+  
+  <!-- Jealous energy corruption lines -->
+  <path d="M 90 96 Q 102 99 114 96" stroke="#00a085" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M 85 106 Q 92 109 99 106" stroke="#00b894" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M 103 106 Q 110 109 117 106" stroke="#00b894" stroke-width="0.8" fill="none" opacity="0.5"/>
+  
+  <!-- Malicious energy waves -->
+  <path d="M 65 88 Q 70 85 75 88" stroke="#00a085" stroke-width="1.2" fill="none" opacity="0.6"/>
+  <path d="M 125 88 Q 130 85 135 88" stroke="#00a085" stroke-width="1.2" fill="none" opacity="0.6"/>
+  <path d="M 95 72 Q 102 69 109 72" stroke="#00b894" stroke-width="1" fill="none" opacity="0.5"/>
+  
+  <!-- Dark shadow for malicious presence -->
+  <ellipse cx="102" cy="170" rx="40" ry="9" fill="#2d3436" opacity="0.2"/>
+  
+  <!-- Intense jealous energy bursts -->
+  <circle cx="66" cy="80" r="1.5" fill="#00a085" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="134" cy="85" r="1.2" fill="#00b894" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.9;0.7" dur="1.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="118" cy="70" r="1" fill="#00cec9" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.8;0.6" dur="1.7s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Malicious sparks -->
+  <circle cx="58" cy="92" r="0.8" fill="#00a085" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="142" cy="97" r="0.7" fill="#00b894" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Corruption tendrils -->
+  <path d="M 55 95 Q 65 90 75 95" stroke="#00a085" stroke-width="0.8" fill="none" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 125 95 Q 135 90 145 95" stroke="#00b894" stroke-width="0.8" fill="none" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="2.7s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Jealous rage aura pulses -->
+  <circle cx="102" cy="98" r="50" fill="none" stroke="#00a085" stroke-width="0.5" opacity="0.3">
+    <animate attributeName="r" values="50;55;50" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+</svg>

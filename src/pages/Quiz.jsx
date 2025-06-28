@@ -124,7 +124,7 @@ const Quiz = () => {
     const isCorrect = emotion.id === currentQuestion.correctAnswer
     
     // Record answer
-    answerQuestion(currentQuestionIndex, emotion.id, isCorrect, responseTime)
+    answerQuestion(emotion, responseTime)
     
     // Play audio feedback
     if (user.preferences.audioEnabled && user.preferences.soundEffectsEnabled) {

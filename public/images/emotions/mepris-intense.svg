@@ -1,0 +1,196 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Intense Contempt: Total contempt, extreme asymmetry, superior disgust expression -->
+  
+  <!-- Definitions for gradients and effects -->
+  <defs>
+    <!-- Face gradient with intense superiority and disgust -->
+    <radialGradient id="faceGradientIntense" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#fdcb6e" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#e17055" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#2d3436" stop-opacity="0.3"/>
+    </radialGradient>
+    
+    <!-- Eye gradient with cold, superior disgust -->
+    <radialGradient id="eyeGradientIntense" cx="40%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#636e72" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#2d3436" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#2d3436" stop-opacity="0.9"/>
+    </radialGradient>
+    
+    <!-- Intense contempt aura -->
+    <radialGradient id="contemptAuraIntense" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#2d3436" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#636e72" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#2d3436" stop-opacity="0.1"/>
+    </radialGradient>
+    
+    <!-- Superior disgust glow filter -->
+    <filter id="superiorDisgustGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Distortion effect for asymmetry -->
+    <filter id="asymmetryDistortion">
+      <feTurbulence baseFrequency="0.01" numOctaves="1" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8"/>
+    </filter>
+  </defs>
+  
+  <!-- Background aura of intense contempt -->
+  <circle cx="100" cy="100" r="92" fill="url(#contemptAuraIntense)" opacity="0.7"/>
+  
+  <!-- Superiority waves -->
+  <ellipse cx="100" cy="95" rx="55" ry="60" fill="none" stroke="#2d3436" stroke-width="1" opacity="0.3" filter="url(#asymmetryDistortion)"/>
+  <ellipse cx="100" cy="95" rx="50" ry="55" fill="none" stroke="#636e72" stroke-width="0.8" opacity="0.2" filter="url(#asymmetryDistortion)"/>
+  
+  <!-- Face shape with extreme asymmetry -->
+  <ellipse cx="101" cy="97" rx="42" ry="46" fill="url(#faceGradientIntense)" stroke="#636e72" stroke-width="1.2" transform="rotate(-7 101 97)"/>
+  
+  <!-- Hair perfectly styled with superior appearance -->
+  <path d="M 58 68 Q 72 48 101 50 Q 130 48 142 68 Q 138 58 116 62 Q 101 58 86 62 Q 62 58 58 68" 
+        fill="#6c5ce7" stroke="#a29bfe" stroke-width="1"/>
+  
+  <!-- Immaculately styled hair strands -->
+  <path d="M 68 60 Q 75 57 82 60" stroke="#a29bfe" stroke-width="1.2" fill="none" opacity="0.8"/>
+  <path d="M 118 60 Q 125 57 132 60" stroke="#a29bfe" stroke-width="1.2" fill="none" opacity="0.8"/>
+  <path d="M 85 58 Q 92 55 99 58" stroke="#a29bfe" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M 101 58 Q 108 55 115 58" stroke="#a29bfe" stroke-width="1" fill="none" opacity="0.6"/>
+  
+  <!-- Eyebrows with extreme asymmetric arch and superiority -->
+  <path d="M 75 77 Q 86 73 97 77" stroke="#2d3436" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 104 75 Q 115 71 126 75" stroke="#2d3436" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Deep superiority and disdain lines -->
+  <path d="M 87 75 Q 91 71 95 75" stroke="#b2bec3" stroke-width="1" fill="none" opacity="0.7"/>
+  <path d="M 106 73 Q 110 69 114 73" stroke="#b2bec3" stroke-width="1" fill="none" opacity="0.7"/>
+  <path d="M 89 77 Q 93 74 97 77" stroke="#b2bec3" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M 104 75 Q 108 72 112 75" stroke="#b2bec3" stroke-width="0.8" fill="none" opacity="0.5"/>
+  
+  <!-- Additional contempt furrows -->
+  <path d="M 83 79 Q 87 76 91 79" stroke="#b2bec3" stroke-width="0.6" fill="none" opacity="0.4"/>
+  <path d="M 109 77 Q 113 74 117 77" stroke="#b2bec3" stroke-width="0.6" fill="none" opacity="0.4"/>
+  
+  <!-- Eyes with extreme asymmetric contemptuous stare -->
+  <ellipse cx="83" cy="87" rx="6" ry="4" fill="url(#eyeGradientIntense)" transform="rotate(-10 83 87)"/>
+  <ellipse cx="117" cy="87" rx="6" ry="4" fill="url(#eyeGradientIntense)" transform="rotate(10 117 87)"/>
+  
+  <!-- Extremely asymmetric eyelids showing disdain -->
+  <path d="M 77 85 Q 83 82 89 85" stroke="#2d3436" stroke-width="1.8" fill="none" opacity="0.9"/>
+  <path d="M 111 85 Q 117 82 123 85" stroke="#2d3436" stroke-width="1.8" fill="none" opacity="0.9"/>
+  
+  <!-- Pupils with cold, calculating stare -->
+  <circle cx="84" cy="88" r="2.2" fill="#2d3436"/>
+  <circle cx="116" cy="88" r="2.2" fill="#2d3436"/>
+  
+  <!-- Cold, superior eye highlights -->
+  <circle cx="85" cy="86" r="0.5" fill="#636e72" opacity="0.8"/>
+  <circle cx="117" cy="86" r="0.5" fill="#636e72" opacity="0.8"/>
+  
+  <!-- Additional cold glints -->
+  <circle cx="83" cy="87" r="0.3" fill="#2d3436" opacity="0.6"/>
+  <circle cx="115" cy="87" r="0.3" fill="#2d3436" opacity="0.6"/>
+  
+  <!-- Extreme under-eye definition from disdain -->
+  <path d="M 77 90 Q 83 92 89 90" stroke="#b2bec3" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M 111 90 Q 117 92 123 90" stroke="#b2bec3" stroke-width="1.5" fill="none" opacity="0.6"/>
+  
+  <!-- Additional contempt lines -->
+  <path d="M 79 92 Q 83 94 87 92" stroke="#b2bec3" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M 113 92 Q 117 94 121 92" stroke="#b2bec3" stroke-width="1" fill="none" opacity="0.4"/>
+  
+  <!-- Nose with extreme superior flare and distortion -->
+  <path d="M 101 99 L 98 109 L 101 111 L 104 109 Z" fill="#e17055" stroke="#d63031" stroke-width="0.8"/>
+  
+  <!-- Extreme nostril flare showing disgust -->
+  <ellipse cx="98" cy="107" rx="2" ry="1.2" fill="#d63031" opacity="0.7"/>
+  <ellipse cx="104" cy="107" rx="2" ry="1.2" fill="#d63031" opacity="0.7"/>
+  
+  <!-- Mouth with extreme asymmetric sneer/smirk -->
+  <path d="M 88 119 Q 101 117 114 120" stroke="#2d3436" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Extremely asymmetric lip definition -->
+  <path d="M 90 119 Q 101 118 112 120" stroke="#e17055" stroke-width="1" fill="none" opacity="0.8"/>
+  
+  <!-- Extreme mouth asymmetry and tension -->
+  <circle cx="88" cy="119" r="1.2" fill="#d63031" opacity="0.7"/>
+  <circle cx="114" cy="120" r="1.5" fill="#d63031" opacity="0.8"/>
+  
+  <!-- Mouth corners extremely distorted -->
+  <path d="M 86 119 Q 88 122 90 119" stroke="#2d3436" stroke-width="1.3" fill="none" opacity="0.7"/>
+  <path d="M 112 120 Q 114 123 116 120" stroke="#2d3436" stroke-width="1.3" fill="none" opacity="0.7"/>
+  
+  <!-- Extreme asymmetric nasolabial folds -->
+  <path d="M 86 109 Q 88 114 90 119" stroke="#b2bec3" stroke-width="1.2" fill="none" opacity="0.6"/>
+  <path d="M 115 109 Q 113 114 112 120" stroke="#b2bec3" stroke-width="1.5" fill="none" opacity="0.7"/>
+  
+  <!-- Additional sneer lines -->
+  <path d="M 84 117 Q 86 119 88 117" stroke="#b2bec3" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M 114 118 Q 116 120 118 118" stroke="#b2bec3" stroke-width="0.8" fill="none" opacity="0.5"/>
+  
+  <!-- Cheek definition with extreme asymmetric distortion -->
+  <ellipse cx="75" cy="107" rx="7" ry="11" fill="#e17055" opacity="0.3"/>
+  <ellipse cx="125" cy="107" rx="9" ry="13" fill="#e17055" opacity="0.4"/>
+  
+  <!-- Chin with superior, disdainful lift -->
+  <ellipse cx="101" cy="134" rx="15" ry="8" fill="#e17055" opacity="0.4"/>
+  
+  <!-- Jawline extremely asymmetric and tense -->
+  <path d="M 71 124 Q 86 139 101 139 Q 116 139 129 124" stroke="#d63031" stroke-width="1" fill="none" opacity="0.6"/>
+  
+  <!-- Neck with extremely superior, rigid posture -->
+  <rect x="91" y="144" width="18" height="13" fill="#fdcb6e" stroke="#e17055" stroke-width="0.8" opacity="0.8" transform="rotate(-4 100 150)"/>
+  
+  <!-- Contempt energy corruption lines -->
+  <path d="M 88 97 Q 101 100 114 97" stroke="#2d3436" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M 83 107 Q 90 110 97 107" stroke="#636e72" stroke-width="0.6" fill="none" opacity="0.4"/>
+  <path d="M 104 107 Q 111 110 118 107" stroke="#636e72" stroke-width="0.6" fill="none" opacity="0.4"/>
+  
+  <!-- Superior energy waves -->
+  <path d="M 67 89 Q 72 86 77 89" stroke="#2d3436" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M 123 89 Q 128 86 133 89" stroke="#2d3436" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M 96 73 Q 101 70 106 73" stroke="#636e72" stroke-width="0.8" fill="none" opacity="0.4"/>
+  
+  <!-- Dark, imposing shadow -->
+  <ellipse cx="101" cy="168" rx="36" ry="8" fill="#2d3436" opacity="0.18"/>
+  
+  <!-- Intense contempt energy bursts -->
+  <circle cx="68" cy="81" r="1.2" fill="#2d3436" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.9;0.7" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="132" cy="86" r="1" fill="#636e72" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.8;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="116" cy="71" r="0.8" fill="#2d3436" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Superior sparks -->
+  <circle cx="60" cy="93" r="0.7" fill="#636e72" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.6;0.4" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="140" cy="98" r="0.6" fill="#2d3436" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Contempt tendrils -->
+  <path d="M 57 96 Q 67 91 77 96" stroke="#2d3436" stroke-width="0.6" fill="none" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 123 96 Q 133 91 143 96" stroke="#636e72" stroke-width="0.6" fill="none" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3.2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Superiority aura pulses -->
+  <circle cx="101" cy="97" r="48" fill="none" stroke="#2d3436" stroke-width="0.4" opacity="0.2">
+    <animate attributeName="r" values="48;53;48" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.05;0.2" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Asymmetric distortion indicators -->
+  <path d="M 80 88 Q 85 85 90 88" stroke="#636e72" stroke-width="0.3" fill="none" opacity="0.4"/>
+  <path d="M 110 88 Q 115 85 120 88" stroke="#2d3436" stroke-width="0.3" fill="none" opacity="0.4"/>
+</svg>

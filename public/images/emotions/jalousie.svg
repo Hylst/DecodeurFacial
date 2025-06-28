@@ -1,41 +1,114 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <!-- Face outline -->
-  <ellipse cx="100" cy="110" rx="70" ry="80" fill="#fdbcb4" stroke="#333" stroke-width="2"/>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Face gradient with suspicious undertone -->
+    <radialGradient id="faceGradientJealousy" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#f2d8c8"/>
+      <stop offset="70%" stop-color="#e8c8b8"/>
+      <stop offset="100%" stop-color="#d8b0a0"/>
+    </radialGradient>
+    
+    <!-- Suspicion shadow gradient -->
+    <radialGradient id="suspicionShadow" cx="0.6" cy="0.4" r="0.8">
+      <stop offset="0%" stop-color="rgba(140,120,100,0.1)"/>
+      <stop offset="100%" stop-color="rgba(100,80,60,0.3)"/>
+    </radialGradient>
+    
+    <!-- Eye gradient -->
+    <radialGradient id="eyeGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="80%" stop-color="#f8f8f8"/>
+      <stop offset="100%" stop-color="#e8e8e8"/>
+    </radialGradient>
+    
+    <!-- Surveillance intensity gradient -->
+    <radialGradient id="surveillanceGlow" cx="0.5" cy="0.5" r="0.7">
+      <stop offset="0%" stop-color="rgba(160,140,120,0.2)"/>
+      <stop offset="100%" stop-color="rgba(120,100,80,0.4)"/>
+    </radialGradient>
+  </defs>
   
-  <!-- Hair -->
-  <path d="M30 60 Q50 20 100 25 Q150 20 170 60 Q160 40 100 35 Q40 40 30 60" fill="#8b4513"/>
+  <!-- Face outline with suspicion shadow -->
+  <ellipse cx="102" cy="110" rx="72" ry="82" fill="url(#suspicionShadow)"/>
+  <ellipse cx="100" cy="110" rx="70" ry="80" fill="url(#faceGradientJealousy)" stroke="#b8906f" stroke-width="1.5"/>
   
-  <!-- Eyebrows (slightly furrowed, suspicious) -->
-  <path d="M60 75 Q70 72 80 76" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <path d="M120 76 Q130 72 140 75" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Hair with slight tension -->
+  <path d="M30 60 Q45 18 100 23 Q155 18 170 60 Q165 38 140 32 Q120 27 100 30 Q80 27 60 32 Q35 38 30 60" fill="#7a4a2e" stroke="#654032" stroke-width="0.5"/>
+  <path d="M50 50 Q65 45 80 48" stroke="#8b5a3c" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M120 48 Q135 45 150 50" stroke="#8b5a3c" stroke-width="0.8" fill="none" opacity="0.5"/>
   
-  <!-- Eyes (narrowed, looking sideways) -->
-  <ellipse cx="70" cy="85" rx="12" ry="6" fill="white"/>
-  <ellipse cx="130" cy="85" rx="12" ry="6" fill="white"/>
-  <!-- Pupils looking to the side suspiciously -->
-  <circle cx="75" cy="85" r="4" fill="#333"/>
-  <circle cx="135" cy="85" r="4" fill="#333"/>
+  <!-- Eyebrows (asymmetrically furrowed, suspicious) -->
+  <path d="M58 75 Q68 70 78 76 Q75 73 70 74" stroke="#5d4037" stroke-width="3.8" fill="none" stroke-linecap="round"/>
+  <path d="M122 76 Q132 70 142 75 Q135 72 130 73" stroke="#5d4037" stroke-width="3.8" fill="none" stroke-linecap="round"/>
   
-  <!-- Nose -->
-  <path d="M95 95 L100 105 L105 95" stroke="#333" stroke-width="1.5" fill="none"/>
+  <!-- Deep frown lines between eyebrows -->
+  <path d="M83 78 Q88 74 93 78" stroke="#a67c52" stroke-width="1.2" fill="none" opacity="0.8"/>
+  <path d="M93 78 Q98 74 103 78" stroke="#a67c52" stroke-width="1.2" fill="none" opacity="0.8"/>
+  <path d="M103 78 Q108 74 113 78" stroke="#a67c52" stroke-width="1.2" fill="none" opacity="0.8"/>
   
-  <!-- Mouth (pinched, tense) -->
-  <path d="M88 130 Q100 128 112 130" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Forehead tension lines -->
+  <path d="M75 68 Q90 65 105 68" stroke="#c4a382" stroke-width="0.8" fill="none" opacity="0.6"/>
+  <path d="M80 72 Q95 70 110 72" stroke="#c4a382" stroke-width="0.6" fill="none" opacity="0.4"/>
   
-  <!-- Tension lines between eyebrows -->
-  <path d="M85 78 Q90 76 95 78" stroke="#333" stroke-width="1" fill="none" opacity="0.6"/>
-  <path d="M105 78 Q110 76 115 78" stroke="#333" stroke-width="1" fill="none" opacity="0.6"/>
+  <!-- Eyes (narrowed, looking sideways with surveillance intensity) -->
+  <ellipse cx="70" cy="85" rx="13" ry="7" fill="url(#eyeGradient)" stroke="#b8906f" stroke-width="0.8"/>
+  <ellipse cx="130" cy="85" rx="13" ry="7" fill="url(#eyeGradient)" stroke="#b8906f" stroke-width="0.8"/>
   
-  <!-- Crow's feet from squinting -->
-  <path d="M82 82 L87 80" stroke="#333" stroke-width="0.5" fill="none" opacity="0.5"/>
-  <path d="M82 85 L87 85" stroke="#333" stroke-width="0.5" fill="none" opacity="0.5"/>
-  <path d="M82 88 L87 90" stroke="#333" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <!-- Heavy upper eyelids (squinting) -->
+  <path d="M57 82 Q70 78 83 82" stroke="#b8906f" stroke-width="2" fill="none"/>
+  <path d="M117 82 Q130 78 143 82" stroke="#b8906f" stroke-width="2" fill="none"/>
   
-  <path d="M118 82 L113 80" stroke="#333" stroke-width="0.5" fill="none" opacity="0.5"/>
-  <path d="M118 85 L113 85" stroke="#333" stroke-width="0.5" fill="none" opacity="0.5"/>
-  <path d="M118 88 L113 90" stroke="#333" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <!-- Lower eyelid tension -->
+  <path d="M57 88 Q70 92 83 88" stroke="#c4a382" stroke-width="1.2" fill="none" opacity="0.7"/>
+  <path d="M117 88 Q130 92 143 88" stroke="#c4a382" stroke-width="1.2" fill="none" opacity="0.7"/>
   
-  <!-- Slight shadow around eyes showing surveillance -->
-  <ellipse cx="70" cy="85" rx="15" ry="10" fill="#333" opacity="0.1"/>
-  <ellipse cx="130" cy="85" rx="15" ry="10" fill="#333" opacity="0.1"/>
+  <!-- Pupils (looking sideways suspiciously) -->
+  <circle cx="75" cy="85" r="4.5" fill="#2c1810"/>
+  <circle cx="135" cy="85" r="4.5" fill="#2c1810"/>
+  
+  <!-- Eye highlights (calculating glint) -->
+  <circle cx="77" cy="83" r="1.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="137" cy="83" r="1.5" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Crow's feet from intense squinting -->
+  <path d="M83 80 Q88 78 90 82" stroke="#c4a382" stroke-width="1" fill="none" opacity="0.7"/>
+  <path d="M83 85 Q88 85 90 85" stroke="#c4a382" stroke-width="1" fill="none" opacity="0.7"/>
+  <path d="M83 90 Q88 92 90 88" stroke="#c4a382" stroke-width="1" fill="none" opacity="0.7"/>
+  
+  <path d="M117 80 Q112 78 110 82" stroke="#c4a382" stroke-width="1" fill="none" opacity="0.7"/>
+  <path d="M117 85 Q112 85 110 85" stroke="#c4a382" stroke-width="1" fill="none" opacity="0.7"/>
+  <path d="M117 90 Q112 92 110 88" stroke="#c4a382" stroke-width="1" fill="none" opacity="0.7"/>
+  
+  <!-- Surveillance shadow around eyes -->
+  <ellipse cx="70" cy="85" rx="16" ry="12" fill="url(#surveillanceGlow)"/>
+  <ellipse cx="130" cy="85" rx="16" ry="12" fill="url(#surveillanceGlow)"/>
+  
+  <!-- Nose with slight flare -->
+  <path d="M95 95 L100 105 L105 95" stroke="#b8906f" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <ellipse cx="97" cy="102" rx="1.5" ry="2" fill="#b8906f" opacity="0.4"/>
+  <ellipse cx="103" cy="102" rx="1.5" ry="2" fill="#b8906f" opacity="0.4"/>
+  
+  <!-- Mouth (pinched, tense with suppressed emotion) -->
+  <path d="M86 130 Q100 126 114 130" stroke="#b8906f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Lip compression lines -->
+  <path d="M88 128 Q100 124 112 128" stroke="#a67c52" stroke-width="1" fill="none" opacity="0.7"/>
+  <path d="M90 132 Q100 130 110 132" stroke="#c4a382" stroke-width="0.8" fill="none" opacity="0.5"/>
+  
+  <!-- Nasolabial folds (tension) -->
+  <path d="M105 105 Q110 115 112 125" stroke="#c4a382" stroke-width="1.2" fill="none" opacity="0.6"/>
+  <path d="M95 105 Q90 115 88 125" stroke="#c4a382" stroke-width="1.2" fill="none" opacity="0.6"/>
+  
+  <!-- Jaw tension -->
+  <path d="M75 140 Q85 143 95 140" stroke="#c4a382" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M105 140 Q115 143 125 140" stroke="#c4a382" stroke-width="1" fill="none" opacity="0.5"/>
+  
+  <!-- Chin tension from suppressed emotion -->
+  <ellipse cx="100" cy="148" rx="4" ry="2" fill="#c4a382" opacity="0.4"/>
+  
+  <!-- Neck tension -->
+  <path d="M88 175 Q100 178 112 175" stroke="#c4a382" stroke-width="0.8" fill="none" opacity="0.4"/>
+  
+  <!-- Subtle surveillance lines (paranoia markers) -->
+  <path d="M45 95 Q55 93 65 95" stroke="#d4a894" stroke-width="0.6" fill="none" opacity="0.3"/>
+  <path d="M135 95 Q145 93 155 95" stroke="#d4a894" stroke-width="0.6" fill="none" opacity="0.3"/>
 </svg>

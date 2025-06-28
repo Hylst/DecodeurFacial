@@ -1,33 +1,104 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <!-- Face outline (chin slightly raised) -->
-  <ellipse cx="100" cy="105" rx="70" ry="80" fill="#fdbcb4" stroke="#333" stroke-width="2"/>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Face gradient with healthy glow -->
+    <radialGradient id="faceGradientPride" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#f8e1d4"/>
+      <stop offset="70%" stop-color="#f0d0c0"/>
+      <stop offset="100%" stop-color="#e2b8a0"/>
+    </radialGradient>
+    
+    <!-- Confidence aura gradient -->
+    <radialGradient id="confidenceAura" cx="0.5" cy="0.4" r="0.9">
+      <stop offset="0%" stop-color="rgba(255,215,0,0.1)"/>
+      <stop offset="100%" stop-color="rgba(255,165,0,0.05)"/>
+    </radialGradient>
+    
+    <!-- Eye gradient -->
+    <radialGradient id="eyeGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="80%" stop-color="#f8f8f8"/>
+      <stop offset="100%" stop-color="#e8e8e8"/>
+    </radialGradient>
+    
+    <!-- Satisfaction glow -->
+    <radialGradient id="satisfactionGlow" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0%" stop-color="rgba(255,220,180,0.3)"/>
+      <stop offset="100%" stop-color="rgba(255,220,180,0)"/>
+    </radialGradient>
+  </defs>
   
-  <!-- Hair -->
-  <path d="M30 55 Q50 15 100 20 Q150 15 170 55 Q160 35 100 30 Q40 35 30 55" fill="#8b4513"/>
+  <!-- Confidence aura -->
+  <ellipse cx="100" cy="105" rx="85" ry="95" fill="url(#confidenceAura)"/>
   
-  <!-- Eyebrows (confident, slightly raised) -->
-  <path d="M60 70 Q70 65 80 68" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <path d="M120 68 Q130 65 140 70" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Face outline (chin slightly raised, confident posture) -->
+  <ellipse cx="100" cy="105" rx="70" ry="80" fill="url(#faceGradientPride)" stroke="#c49080" stroke-width="1.5"/>
   
-  <!-- Eyes (confident, direct gaze) -->
-  <ellipse cx="70" cy="80" rx="12" ry="8" fill="white"/>
-  <ellipse cx="130" cy="80" rx="12" ry="8" fill="white"/>
-  <!-- Pupils looking straight ahead confidently -->
-  <circle cx="70" cy="80" r="4" fill="#333"/>
-  <circle cx="130" cy="80" r="4" fill="#333"/>
+  <!-- Hair with refined styling -->
+  <path d="M30 55 Q45 10 100 15 Q155 10 170 55 Q165 30 140 25 Q120 20 100 23 Q80 20 60 25 Q35 30 30 55" fill="#8b5a3c" stroke="#6d4428" stroke-width="0.5"/>
+  <path d="M45 45 Q60 35 75 40" stroke="#9d6b4a" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M125 40 Q140 35 155 45" stroke="#9d6b4a" stroke-width="1" fill="none" opacity="0.6"/>
   
-  <!-- Nose -->
-  <path d="M95 90 L100 100 L105 90" stroke="#333" stroke-width="1.5" fill="none"/>
+  <!-- Eyebrows (confident, slightly raised and well-groomed) -->
+  <path d="M58 68 Q68 62 78 66 Q75 64 70 65" stroke="#5d4037" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M122 66 Q132 62 142 68 Q135 64 130 65" stroke="#5d4037" stroke-width="3.5" fill="none" stroke-linecap="round"/>
   
-  <!-- Mouth (subtle, satisfied smile - slightly asymmetric) -->
-  <path d="M85 125 Q100 130 115 127" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Subtle confidence lines above eyebrows -->
+  <path d="M65 60 Q75 58 85 60" stroke="#d4a894" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M115 60 Q125 58 135 60" stroke="#d4a894" stroke-width="0.8" fill="none" opacity="0.5"/>
   
-  <!-- Slight dimple on one side -->
-  <circle cx="118" cy="120" r="1" fill="#333" opacity="0.3"/>
+  <!-- Eyes (confident, direct gaze with slight satisfaction) -->
+  <ellipse cx="70" cy="80" rx="13" ry="9" fill="url(#eyeGradient)" stroke="#c49080" stroke-width="0.8"/>
+  <ellipse cx="130" cy="80" rx="13" ry="9" fill="url(#eyeGradient)" stroke="#c49080" stroke-width="0.8"/>
   
-  <!-- Confident posture lines -->
-  <path d="M90 75 Q95 73 100 75" stroke="#333" stroke-width="0.5" fill="none" opacity="0.4"/>
+  <!-- Upper eyelids (relaxed confidence) -->
+  <path d="M57 77 Q70 73 83 77" stroke="#c49080" stroke-width="1.2" fill="none"/>
+  <path d="M117 77 Q130 73 143 77" stroke="#c49080" stroke-width="1.2" fill="none"/>
   
-  <!-- Slight shadow under chin showing raised position -->
-  <ellipse cx="100" cy="175" rx="50" ry="8" fill="#333" opacity="0.1"/>
+  <!-- Pupils (direct, confident gaze) -->
+  <circle cx="70" cy="80" r="4.5" fill="#2c1810"/>
+  <circle cx="130" cy="80" r="4.5" fill="#2c1810"/>
+  
+  <!-- Eye highlights (confident sparkle) -->
+  <circle cx="72" cy="78" r="1.8" fill="#ffffff" opacity="0.9"/>
+  <circle cx="132" cy="78" r="1.8" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Subtle crow's feet (from genuine satisfaction) -->
+  <path d="M83 78 Q88 76 90 80" stroke="#d4a894" stroke-width="0.8" fill="none" opacity="0.6"/>
+  <path d="M83 82 Q88 84 90 80" stroke="#d4a894" stroke-width="0.8" fill="none" opacity="0.6"/>
+  <path d="M117 78 Q112 76 110 80" stroke="#d4a894" stroke-width="0.8" fill="none" opacity="0.6"/>
+  <path d="M117 82 Q112 84 110 80" stroke="#d4a894" stroke-width="0.8" fill="none" opacity="0.6"/>
+  
+  <!-- Nose with refined shape -->
+  <path d="M95 90 L100 100 L105 90" stroke="#c49080" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <ellipse cx="98" cy="97" rx="1" ry="1.5" fill="#c49080" opacity="0.3"/>
+  <ellipse cx="102" cy="97" rx="1" ry="1.5" fill="#c49080" opacity="0.3"/>
+  
+  <!-- Mouth (subtle, satisfied smile - slightly asymmetric showing confidence) -->
+  <path d="M83 125 Q100 132 117 127" stroke="#c49080" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Lip definition -->
+  <path d="M85 123 Q100 128 115 125" stroke="#d4a894" stroke-width="1" fill="none" opacity="0.7"/>
+  
+  <!-- Dimples (satisfaction markers) -->
+  <ellipse cx="118" cy="120" rx="2" ry="3" fill="url(#satisfactionGlow)"/>
+  <circle cx="118" cy="120" r="1.2" fill="#d4a894" opacity="0.6"/>
+  <ellipse cx="82" cy="122" rx="1.5" ry="2" fill="url(#satisfactionGlow)"/>
+  <circle cx="82" cy="122" r="0.8" fill="#d4a894" opacity="0.4"/>
+  
+  <!-- Nasolabial folds (subtle, from genuine smile) -->
+  <path d="M105 100 Q112 110 115 120" stroke="#e0c0a8" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M95 100 Q88 110 85 120" stroke="#e0c0a8" stroke-width="1" fill="none" opacity="0.5"/>
+  
+  <!-- Chin definition (raised with confidence) -->
+  <path d="M85 155 Q100 158 115 155" stroke="#d4a894" stroke-width="1" fill="none" opacity="0.6"/>
+  
+  <!-- Jawline definition -->
+  <path d="M70 140 Q85 145 100 143" stroke="#e0c0a8" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M100 143 Q115 145 130 140" stroke="#e0c0a8" stroke-width="0.8" fill="none" opacity="0.4"/>
+  
+  <!-- Neck with confident posture -->
+  <path d="M88 180 Q100 185 112 180" stroke="#e0c0a8" stroke-width="1" fill="none" opacity="0.5"/>
+  
+  <!-- Subtle glow around face (confidence aura) -->
+  <ellipse cx="100" cy="105" rx="72" ry="82" fill="none" stroke="rgba(255,215,0,0.2)" stroke-width="2"/>
 </svg>

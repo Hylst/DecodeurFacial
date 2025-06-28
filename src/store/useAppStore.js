@@ -60,15 +60,20 @@ const useAppStore = create(
         }
       })),
 
-      startSession: (mode, difficulty = 1) => {
-        const emotions = get().getEmotionsForDifficulty(difficulty)
-        const questions = shuffleArray(emotions).slice(0, 10) // 10 questions per session
+      startSession: (mode, difficulty = 1, customQuestions = null) => {
+        let questions
+        if (customQuestions) {
+          questions = customQuestions
+        } else {
+          const emotions = get().getEmotionsForDifficulty(difficulty)
+          questions = shuffleArray(emotions).slice(0, 10) // 10 questions per session
+        }
         
         set((state) => ({
           currentSession: {
             mode,
             difficulty,
-            currentEmotion: questions[0],
+            currentEmotion: questions[0]?.emotion || questions[0],
             currentQuestionIndex: 0,
             questions,
             answers: [],
@@ -78,16 +83,19 @@ const useAppStore = create(
         }))
       },
 
-      answerQuestion: (selectedEmotion, responseTime) => {
+      answerQuestion: (selectedAnswer, responseTime) => {
         const state = get()
         const { currentSession } = state
-        const correctEmotion = currentSession.questions[currentSession.currentQuestionIndex]
-        const isCorrect = selectedEmotion === correctEmotion
+        const currentQuestion = currentSession.questions[currentSession.currentQuestionIndex]
+        const correctAnswer = currentQuestion.correctAnswer || currentQuestion.emotion?.id
+        const selectedAnswerId = selectedAnswer.id || selectedAnswer
+        const isCorrect = selectedAnswerId === correctAnswer
 
         const newAnswer = {
-          question: correctEmotion,
-          selected: selectedEmotion,
-          correct: isCorrect,
+          question: currentQuestion,
+          selectedAnswer: selectedAnswerId,
+          correctAnswer: correctAnswer,
+          isCorrect: isCorrect,
           responseTime,
           timestamp: Date.now()
         }
@@ -101,7 +109,7 @@ const useAppStore = create(
             ...state.currentSession,
             answers: newAnswers,
             currentQuestionIndex: nextIndex,
-            currentEmotion: isSessionComplete ? null : currentSession.questions[nextIndex],
+            currentEmotion: isSessionComplete ? null : currentSession.questions[nextIndex]?.emotion,
             isActive: !isSessionComplete
           }
         }))
@@ -116,32 +124,32 @@ const useAppStore = create(
 
       updateProgress: (sessionAnswers) => {
         set((state) => {
-          const correctCount = sessionAnswers.filter(a => a.correct).length
+          const correctCount = sessionAnswers.filter(a => a.isCorrect).length
           const totalTime = sessionAnswers.reduce((sum, a) => sum + a.responseTime, 0)
           const avgTime = totalTime / sessionAnswers.length
 
           // Update emotion-specific stats
           const newEmotionStats = { ...state.progress.emotionStats }
           sessionAnswers.forEach(answer => {
-            const emotion = answer.question
-            if (!newEmotionStats[emotion]) {
-              newEmotionStats[emotion] = { correct: 0, total: 0, avgTime: 0 }
+            const emotionId = answer.question.emotion?.id || answer.question.id
+            if (!newEmotionStats[emotionId]) {
+              newEmotionStats[emotionId] = { correct: 0, total: 0, avgTime: 0 }
             }
-            newEmotionStats[emotion].total += 1
-            if (answer.correct) {
-              newEmotionStats[emotion].correct += 1
+            newEmotionStats[emotionId].total += 1
+            if (answer.isCorrect) {
+              newEmotionStats[emotionId].correct += 1
             }
             // Update average response time
-            const prevAvg = newEmotionStats[emotion].avgTime
-            const prevTotal = newEmotionStats[emotion].total - 1
-            newEmotionStats[emotion].avgTime = 
-              (prevAvg * prevTotal + answer.responseTime) / newEmotionStats[emotion].total
+            const prevAvg = newEmotionStats[emotionId].avgTime
+            const prevTotal = newEmotionStats[emotionId].total - 1
+            newEmotionStats[emotionId].avgTime = 
+              (prevAvg * prevTotal + answer.responseTime) / newEmotionStats[emotionId].total
           })
 
           // Calculate streak
           let currentStreak = 0
           for (let i = sessionAnswers.length - 1; i >= 0; i--) {
-            if (sessionAnswers[i].correct) {
+            if (sessionAnswers[i].isCorrect) {
               currentStreak++
             } else {
               break

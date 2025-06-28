@@ -121,6 +121,16 @@
   - Eyebrows: moved from 15% to 25% top position
   - Forehead: moved from 5% to 15% top position and adjusted width
 - ✅ Improved application stability and performance
+- ✅ **Quiz Component TypeError** - Added null checking for `currentQuestion` to prevent `TypeError` when accessing `currentQuestion.options`.
+- ✅ **EmotionHighlight Component** - Corrected facial zone positioning by adjusting `top`, `width`, and `height` properties for `eyes`, `eyebrows`, and `forehead` for better anatomical accuracy.
+- ✅ **React Router Future Flags** - Added `v7_startTransition` and `v7_relativeSplatPath` future flags to `BrowserRouter` to resolve deprecation warnings.
+- ✅ **Eyebrows visibility for 'joy' emotion** - Added missing `eyebrows` facial cue to the 'joie' (joy) emotion in `emotions.js`.
+- ✅ **Quiz Logic Implementation** - Fixed quiz functionality by:
+  - Adding missing `create` import from zustand in `useAppStore.js`
+  - Updated `startSession` function to accept custom questions parameter
+  - Modified `answerQuestion` function to work with new question structure (emotion + options)
+  - Updated `updateProgress` function to use `isCorrect` property instead of `correct`
+  - Fixed answer recording and session management for proper quiz flow
 
 ### Added
 - ✅ Created a `.gitignore` file to exclude unnecessary files from version control.
@@ -128,12 +138,47 @@
 
 ### 🔥 **CURRENT PRIORITIES**
 
+## 📋 TODO - Prochaines améliorations
+
+### Bug Fixes & Optimizations
+- ✅ Fixed quiz functionality issues with currentQuestion display
+- ✅ Added missing Zustand create import in useAppStore.js
+- ✅ Updated startSession function to accept custom questions parameter
+- ✅ Modified answerQuestion function to handle new question structure
+- ✅ Updated updateProgress function to use isCorrect property consistently
+- ✅ Fixed answer recording and session management in quiz mode
+- ✅ Fixed missing React hooks imports (useState, useEffect) in Quiz.jsx
+- ✅ Resolved "Question suivante" button functionality issue
+- 🔲 Optimize bundle size and loading performance
+- 🔲 Add error boundaries for better error handling
+- 🔲 Implement proper loading states throughout the app
+
 ### Development & Testing
 - 🔲 Verify responsive design on different screen sizes
 
 ### Visual Assets Enhancement
-- 🔲 Create SVG faces for Level 2 emotions (anxiété, fierté, gêne, etc.)
-- 🔲 Add more diverse facial expressions and variations
+- ✅ Enhanced SVG faces with detailed gradients, shadows, and realistic features
+- ✅ Improved joie (joy) emotion with crow's feet, dimples, and genuine smile details
+- ✅ Enhanced tristesse (sadness) with tears, puffy eyes, and facial tension lines
+- ✅ Upgraded colère (anger) with intense features, temple veins, and gritted teeth
+- ✅ Improved surprise emotion with wide eyes, forehead wrinkles, and open mouth details
+- ✅ Created SVG faces for all Level 2 emotions with sophisticated features:
+  - `anxiete.svg` - Added stress shadows, worry lines, nervous tension, and darting eyes
+  - `fierte.svg` - Added confidence aura, satisfied expression, and proud posture
+  - `gene.svg` - Added blushing effects, uncomfortable smile, and embarrassment markers
+  - `jalousie.svg` - Added suspicion shadows, narrowed eyes, and surveillance elements
+  - `mepris.svg` - Added superiority aura, asymmetric smirk, and condescending features
+  - `confusion.svg` - Added question bubbles, asymmetric expressions, and uncertainty markers
+- ✅ Created diverse facial expression variations for all emotions:
+  - **Level 1 Variations**: mild and intense versions for joy, sadness, anger, fear, disgust, and surprise
+  - **Level 2 Variations**: mild and intense versions for anxiety and other complex emotions
+  - **Enhanced Features**: unique intensity levels, specialized visual effects, detailed anatomical expressions
+- ✅ Created comprehensive emotion inventory documentation (`emotions.md`):
+  - **Complete catalog**: 12 implemented emotions with detailed descriptions
+  - **Intensity analysis**: 7 emotions with full intensity variations (mild/standard/intense)
+  - **Implementation statistics**: Level distribution, category breakdown, precision metrics
+  - **Future roadmap**: 8 proposed additional emotions for Levels 2-3
+  - **Technical recommendations**: Animation improvements, graphic enhancements, recognition precision
 - 🔲 Create video demonstrations for each emotion
 - 🔲 Add real photo examples for advanced learning
 
